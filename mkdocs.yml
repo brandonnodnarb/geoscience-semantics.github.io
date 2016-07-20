@@ -1,0 +1,12 @@
+site_name: geoscience semantics
+
+repo_url: https://github.com/geoscience-semantics/
+repo_name:
+site_description: awesome geoscience semantic models
+site_author: brandonnodnarb
+
+pages:
+- home: index.md
+- references: refs.md
+
+theme: yeti
