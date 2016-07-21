@@ -1,9 +1,10 @@
 site_name: geoscience semantics
 
+site_url: http://geoscience-semantics.info
 repo_url: https://github.com/geoscience-semantics/
-repo_name:
+repo_name: github
 site_description: awesome geoscience semantic models
-site_author: brandonnodnarb
+site_author: brandon whitehead
 
 pages:
 - home: index.md
