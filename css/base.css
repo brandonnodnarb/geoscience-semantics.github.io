@@ -73,11 +73,11 @@ pre code {
 }
 
 a > code {
-    color: #008cba;
+    color: #007fff;
 }
 
 a > code:hover, a > code:focus {
-    color: #00526e;
+    color: #0059b3;
 }
 
 /*
@@ -204,12 +204,12 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
     border-color: transparent;
     border-style: solid;
     border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;
+    border-left-color: #999999;
     margin-top: 5px;
     margin-right: -10px;
 }
 
 /* little arrow of parent menu */
 .dropdown-submenu:hover>a:after {
-    border-left-color: #fff;
+    border-left-color: #404040;
 }
