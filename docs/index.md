@@ -1,14 +1,15 @@
 # awesome geoscience semantics
-A curated list of geoscience semantic frameworks.
+A curated list of geoscience semantic models.
 
-This work was inspired by    [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) lists.  
+This work was inspired by  [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)  lists.  
 
-Join the chat at [![https://gitter.im/geoscience-semantics/geoscience-semantics.github.io](https://badges.gitter.im/geoscience-semantics/geoscience-semantics.github.io.svg)](https://gitter.im/geoscience-semantics/geoscience-semantics.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Join the chat on   [![https://gitter.im/geoscience-semantics/geoscience-semantics.github.io](https://badges.gitter.im/geoscience-semantics/geoscience-semantics.github.io.svg)](https://gitter.im/geoscience-semantics/geoscience-semantics.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 - - -
 ## Preliminaries
 The following geoscience semantic models are organised based (loosely) on the ***semantic spectrum*** (Obrst, 2003; 2010; Uschold and Gruninger, 2004; Smith and Welty, 2001; McGuinness, 2003), with particular focus on the high level categorisations described by Guarino and others (2009).  
 
+The criteria distinguishing between *upper-level*, *domain*, *task*, and *application* ontologies is taken from Guarino ([CITE]), Obrst ([CITE]), and Obrst and Cassidy ([CITE]).
 - - -
 ## Logical Languages
 - Web Ontology Language ([OWL 2](https://www.w3.org/TR/owl2-overview/)) (there is also the initial version of [OWL](https://www.w3.org/TR/2004/REC-owl-features-20040210/))
@@ -18,51 +19,52 @@ The following geoscience semantic models are organised based (loosely) on the **
 ### upper-level domain ontologies
 | name      | citation         | brief synopsis               | expressivity <br />marker  |  dependencies | domain |
 | --------- | ---------------- | ---------------------------- | ----------- | ------- | ------ |
-| SWEET | (Raskin, 2006); <br />(Raskin and Pan, 2005) |  | OWL-DL | Upper-level domain |
-| NADM-C1 | (NADM Steering Committee, 2004); <br />(Richard, 2006) |  | UML | Upper-level domain; <br />Geologic Map |
-| Geo-ontology | (Perrin et al., 2005) |  | KIF | general geology |
-| Geological Time Ontology | (Perrin et al., 2011) | Geologic Time |
-| Geological Dating Ontology | (Perrin et al., 2011) | Geologic Time |
+| SWEET | (Raskin, 2006); <br />(Raskin and Pan, 2005) | - | OWL-DL |  | general domain |
+| NADM-C1 | (NADM Steering Committee, 2004); <br />(Richard, 2006) | Conceptual framework for top level geologic concepts & controlled vocabulary for geologic map data | Conceptual Model; UML |  | general domain; <br /> geologic observation |
+| Geo-ontology | (Perrin et al., 2005) | Four schemas formalising structural geologists expert knowledge for 3D models, interpretation & provenance | KIF |  | general geology |
+| Geological Time Ontology | (Perrin et al., 2011) |  |  |  | geologic time |
+| Geological Dating Ontology | (Perrin et al., 2011) |  |  |  | geologic time |
+
 
 ### domain ontologies
-| name      | citation         | brief synopsis               | expressivity <br />marker  |  dependencies | domain |
+| name      | citation         | brief synopsis               | expressivity <br />marker  |  dependencies / related | domain |
 | --------- | ---------------- | ---------------------------- | ----------- | ------- | ------ |
-| Basin Ontology | (Whitehead et al., 2010); <br />(Everett et al., 2011) | Exploration |
-| Fractures Ontology | (Zhong et al., 2009); <br />(Zhong et al., 2008) | Structural |
-| Hydrogeology Ontology | (Tripathi and Babaie, 2008) | Hydrogeology |
-| StructuralGeoOntology | (Babaie et al., 2006) | Structural (top level, many sub-level ontologies) |
-| FractureGeoOntology | (Babaie et al., 2006) | Structural |
-| FoliationGeoOntology | (Babaie et al., 2006) | Structural |
-| FoldGeoOntology | (Babaie et al., 2006) | Structural |
-| pluton object ontology | (Sinha et al., 2006) | Petrology; informal; Ontology for processes acting on plutons |
-| EPONT | (Malik et al., 2010) | Upper-level domain |
-| Volcano system ontology | (Fauziati and Watanabe, 2010) | Volcanology |
-| Volcanic phenomena ontology | (Fauziati and Watanabe, 2010) | Volcanology |
-| Volcanic material ontology | (Fauziati and Watanabe, 2010) | Volcanology |
-| Magma ontology | (Fauziati and Watanabe, 2010) | Volcanology |
-| Volcanic Hazard ontology | (Fauziati and Watanabe, 2010) | Volcanology |
-| Volcanic vulnerability ontology | (Fauziati and Watanabe, 2010) | Volcanology |
-| Volcanic hazard management ontology | (Fauziati and Watanabe, 2010) | Volcanology |
-| Volcano Ontology | (Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007) | Volcanology |
-| Plate-tectonics Ontology | (Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007) | Plate-tectonics |
-| Petrology Ontology | (Shkotin et al., 2012) | Petrology |
-| Petroleum Basin ontology | (Nimmagadda et al., 2007) | Seismology |
-| HIS ontology | (Piasecki and Beran, 2009); <br />(Beran and Piasecki, 2009) | Water resources |
-| CUAHSI discovery ontology V1.0 | (Piasecki and Beran, 2009); <br />(Beran and Piasecki, 2009) | Water resources |
-| Hierarchical classification of tectonic assemblages | (Struik and Quat, 2002) | Tectonics |
-| Scheme for rock classification | (Struik et al., 2002) | Rock Classification |
-| PetroGrapher | (Abel et al., 2004b) | Petrography |
-| | (Abel et al., 2005); <br />(Abel et al., 2004a) | Petrography |
-| stratigraphy ontology | (Abel et al., 2012) | Stratigraphy |
-| Micropaleontology ontology | (Gary & Platon, 2010) | Micropaleontology |
-| Gravity anomaly ontology | (Gates et al., 2007) | Seismology |
-
+| Basin Ontology | (Whitehead et al., 2010); <br />(Everett et al., 2011) |  | OWL Full |  | Exploration |
+| Fractures Ontology | (Zhong et al., 2009); <br />(Zhong et al., 2008) | explicit specifications about fractures, including: properties, deformation mechanisms, formation and evolution. | OWL-DL | SWEET | Structural |
+| Hydrogeology Ontology | (Tripathi and Babaie, 2008) |  |  | SWEET | Hydrogeology |
+| StructuralGeoOntology | (Babaie et al., 2006) |  | UML |  | Structural |
+| FractureGeoOntology | (Babaie et al., 2006) |  | UML | StructuralGeoOntology | Structural |
+| FoliationGeoOntology | (Babaie et al., 2006) |  | UML | StructuralGeoOntology | Structural |
+| FoldGeoOntology | (Babaie et al., 2006) |  | UML | StructuralGeoOntology | Structural |
+| pluton object ontology | (Sinha et al., 2006) | domain model to capture reasoning used in understanding processes affecting the rock record | UML; conceptual model |  | Petrology |
+| EPONT | (Malik et al., 2010) |  | UML; conceptual model | SUO; SWEET; NADM | Upper-level domain |
+| Volcano system ontology | (Fauziati and Watanabe, 2010) |  | UML |  | Volcanology |
+| Volcanic phenomena ontology | (Fauziati and Watanabe, 2010) |  | UML |  | Volcanology |
+| Volcanic material ontology | (Fauziati and Watanabe, 2010) |  | UML |  |  Volcanology |
+| Magma ontology | (Fauziati and Watanabe, 2010) |  | UML |  | Volcanology |
+| Volcanic Hazard ontology | (Fauziati and Watanabe, 2010) |  | UML |  | Volcanology |
+| Volcanic vulnerability ontology | (Fauziati and Watanabe, 2010) |  | UML |  | Volcanology |
+| Volcanic hazard management ontology | (Fauziati and Watanabe, 2010) |  | UML |  | Volcanology |
+| Volcano Ontology | (Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007) |  | OWL-DL | SWEET | Volcanology; Structural |
+| Plate-tectonics Ontology | (Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007) |  | OWL-DL | SWEET | Plate-tectonics |
+| Petrology Ontology | (Shkotin et al., 2012) | domain model for a formal theory of petrology | OWL-DL |  | Petrology |
+| Petroleum Basin ontology | (Nimmagadda et al., 2007) |  |  |  | Seismology |
+| HIS ontology | (Piasecki and Beran, 2009); <br />(Beran and Piasecki, 2009) |  | SKOS; OWL-DL |  | Water resources |
+| CUAHSI discovery ontology V1.0 | (Piasecki and Beran, 2009); <br />(Beran and Piasecki, 2009) |  | SKOS; OWL-DL |  | Water resources |
+| Hierarchical classification of tectonic assemblages | (Struik and Quat, 2002) |  |  |  | Tectonics |
+| Scheme for rock classification | (Struik et al., 2002) |  |  |  | Rock Classification |
+| PetroGrapher | (Abel et al., 2004b) |  |  |  | Petrography |
+| | (Abel et al., 2005); <br />(Abel et al., 2004a) |  |  |  | Petrography |
+| stratigraphy ontology | (Abel et al., 2012) |  |  |  | Stratigraphy |
+| Micropaleontology ontology | (Gary & Platon, 2010) |  |  |  | Micropaleontology |
+| Gravity anomaly ontology | (Gates et al., 2007) |  |  |  | Seismology |
+| surface hydrology *concepts* | (Feng et al., 2005) | data model for surface hydrology processes | *is-a* hierarchies <br /> and parthood  | DOLCE | hydrology |
 
 ### task ontologies
 | name      | citation         | brief synopsis               | expressivity <br />marker  |  dependencies | domain |
 | --------- | ---------------- | ---------------------------- | ----------- | ------- | ------ |
-| Event Ontology | (Mastella et al., 2007) | Geologic Events |
-| EarthModel Ontology | (Mastella et al., 2007) | General Geoscience |
+| Event Ontology | (Mastella et al., 2007a) |  |  | Geo-ontology | Geologic Events |
+| EarthModel Ontology | (Mastella et al., 2007b) |  |  | Geo-ontology | General Geoscience |
 | Gravity ontology | (Salayandia et al., 2006) | Seismology |
 | Gravity-data ontology | (Gates et al., 2007) | Seismology |
 | GravityWDO | (Da Silva et al., 2007) | Seismology; (gravity data processing) |
@@ -74,7 +76,7 @@ The following geoscience semantic models are organised based (loosely) on the **
 ### application ontologies
 | name      | citation         | brief synopsis               | expressivity <br />marker  |  dependencies | domain |
 | --------- | ---------------- | ---------------------------- | ----------- | ------- | ------ |
-| Data and Ontology MAPPING (GEON) | (Lin and Ludäscher, 2004); <br />(Lin and Ludäscher, 2003) | Data Integration |
+| Data and Ontology MAPPING (GEON) | (Lin and Ludäscher, 2004); <br />(Lin and Ludäscher, 2003) |  | OWL-DL |  | Data Integration |
 | data model ontology | (Parekh et al., 2004) | Data Integration |
 | geoonto ontology | (Xiong et al., 2009) | Application |
 | Geologic Ages | (Rainaud et al., 2008) | Application |
@@ -148,6 +150,9 @@ The following geoscience semantic models are organised based (loosely) on the **
 * [AGU Index of Terms](http://onlinelibrary.wiley.com/doi/10.1029/EO067i039p00756/abstract) - Closed set of terms used by the American Geophysical Unioon (AGU) to categorize conference and publication keywords.<br />
 * [Global Change Master Directory](http://gcmd.nasa.gov/learn/keywords.html) - Terms for tagging NASA's Earth Science data and services.
 
+
+### other relevant works
+Science Knowledge Information ontology (SKIo)
 - - -
 ## Geoscience frameworks utilizing semantics
 * Talkoot
