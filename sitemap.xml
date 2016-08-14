@@ -4,7 +4,15 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-07-28</lastmod>
+     <lastmod>2016-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/ontologies/</loc>
+     <lastmod>2016-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,17 +20,37 @@
     
     <url>
      <loc>None/refs/</loc>
-     <lastmod>2016-07-28</lastmod>
+     <lastmod>2016-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
     <url>
-     <loc>None/contributing/</loc>
-     <lastmod>2016-07-28</lastmod>
+     <loc>None/intro/</loc>
+     <lastmod>2016-08-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>None/resources/</loc>
+     <lastmod>2016-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/notes/</loc>
+     <lastmod>2016-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/contributing/</loc>
+     <lastmod>2016-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
