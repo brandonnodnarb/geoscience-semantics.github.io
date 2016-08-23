@@ -6,9 +6,11 @@ site_description: awesome geoscience semantic models
 site_author: brandon whitehead
 
 pages:
-- home: index.md
-- ontology rundown: ontologies.md
-- references: 'refs.md'
+- ontologies: index.md
+#- ontologies: ontologies.md
+- XML: xml.md
+- related: related.md
+- references: refs.md
 - about:
     - 'introduction to <br />geoscience semantic models': 'intro.md'
     - 'other resources': 'resources.md'

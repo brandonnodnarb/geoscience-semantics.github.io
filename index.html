@@ -51,13 +51,19 @@
             
             
                 <li class="active">
-                    <a href=".">home</a>
+                    <a href=".">ontologies</a>
                 </li>
             
             
             
                 <li >
-                    <a href="ontologies/">ontology rundown</a>
+                    <a href="xml/">XML</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="related/">related</a>
                 </li>
             
             
@@ -115,7 +121,7 @@
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="ontologies/">
+                    <a rel="prev" href="xml/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -144,9 +150,13 @@
         
             <li><a href="#logical-languages">Logical Languages</a></li>
         
-            <li><a href="#metadata-xml-schema-data-models">Metadata, XML Schema &amp; Data Models</a></li>
+            <li><a href="#data-models">Data Models</a></li>
         
-            <li><a href="#other-relevant-works">other relevant works</a></li>
+            <li><a href="#thesauri-or-taxonomies">Thesauri or Taxonomies</a></li>
+        
+            <li><a href="#glossaries-and-data-dictionaries">Glossaries and Data Dictionaries</a></li>
+        
+            <li><a href="#works-in-progress">Works in progress</a></li>
         
     
     </ul>
@@ -154,15 +164,20 @@
             <div class="col-md-9" role="main">
 
 <h1 id="awesome-geoscience-semantics">awesome geoscience semantics</h1>
-<p><em>"That rug really tied the room together."</em><br />
--<a href="http://www.imdb.com/character/ch0003518/?ref_=tt_cl_t1">The Dude</a>
-<br /><br />
-A curated list of geoscience semantic resources.</p>
-<p><a href="https://gitter.im/geoscience-semantics/geoscience-semantics.github.io?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="https://gitter.im/geoscience-semantics/geoscience-semantics.github.io" src="https://badges.gitter.im/geoscience-semantics/geoscience-semantics.github.io.svg" /></a>  <a href="https://flattr.com/submit/auto?user_id=brandonnodnarb&amp;url=http://www.geoscience-semantics.info&amp;title=awesome_geoscience_semantics&amp;language=en_GB&amp;tags=geosciene,semantics,github&amp;category=semantic_web"><img alt="Flattr this git repo" src="http://api.flattr.com/button/flattr-badge-large.png" /></a></p>
+<p>A curated list of geoscience semantic resources.
+<br /></p>
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><img alt="" src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" /></a>
+<a href="https://gitter.im/geoscience-semantics/geoscience-semantics.github.io?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="" src="https://badges.gitter.im/geoscience-semantics/geoscience-semantics.github.io.svg" /></a><a href="https://flattr.com/submit/auto?user_id=brandonnodnarb&amp;url=http://www.geoscience-semantics.info&amp;title=awesome_geoscience_semantics&amp;language=en_GB&amp;tags=geosciene,semantics,github&amp;category=semantic_web"><img alt="" src="http://api.flattr.com/button/flattr-badge-large.png" /></a></p>
+<p>This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by/4.0/">CreativeCommons.org</a>.</p>
 <hr />
 <h2 id="preliminaries">Preliminaries</h2>
-<p>The following geoscience semantic models are organised based (loosely) on the <strong><em>semantic spectrum</em></strong> (Obrst, 2003; 2010; Uschold and Gruninger, 2004; Smith and Welty, 2001; McGuinness, 2003), with particular focus on the high level categorisations described by Guarino and others (2009).  </p>
-<p>The criteria distinguishing between <em>upper-level</em>, <em>domain</em>, <em>task</em>, and <em>application</em> ontologies is taken from Guarino ([CITE]), Obrst ([CITE]), and Obrst and Cassidy ([CITE]).</p>
+<h4 id="on-categorisation">on categorisation</h4>
+<p>The following geoscience semantic models are organised based (loosely) on the <strong><em>semantic spectrum</em></strong> (Obrst, 2003; 2010; Uschold and Gruninger, 2004; Smith and Welty, 2001; McGuinness, 2003; Uschold 2003!!), with particular focus on the high level categorisations described by Guarino and others (2009).  </p>
+<p>The criteria distinguishing between <em>upper-level</em>, <em>domain</em>, <em>task</em>, and <em>application</em> ontologies after Guarino (1998 -- check also 1997(?), &amp; Guarino and Giaretta 1995(?)), Obrst (2010), and Obrst and Cassidy (2011).</p>
+<h4 id="on-order">on order</h4>
+<p>The ontologies are listed by name, where available, in chronological order by publication year.  Where the structure was not given a name explicitly, a logical equivalent is given in <em>italics</em>.  Links on this page are to project homepages and/or repositories.</p>
+<h4 id="on-multiplicity">on multiplicity</h4>
+<p>Many papers discuss more than one ontology.  In most cases each ontology is referenced here.  In some cases multiple "ontologies" are mentioned in the publication, when in fact they are referring to multiple OWL files for one ontology.  There are also cases where an object model is discussed with a corresponding process model.  If possible (i.e. if there is enough information in the paper and/or documentation) these have been listed separately.  Further, there are ontological lineages of models -- i.e. an ontology was developed and in time/development became another structure.  When this is known (i.e. explicitly stated somewhere) the ontologies are connected via the "dependencies / related" field in the table.</p>
 <hr />
 <h2 id="logical-languages">Logical Languages</h2>
 <ul>
@@ -178,44 +193,26 @@ A curated list of geoscience semantic resources.</p>
 <th>citation</th>
 <th>brief synopsis</th>
 <th>expressivity <br />marker</th>
-<th>dependencies</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>SWEET</td>
-<td>(Raskin, 2006); <br />(Raskin and Pan, 2005)</td>
-<td>-</td>
-<td>OWL-DL</td>
-<td>-</td>
-</tr>
-<tr>
 <td>NADM-C1</td>
 <td>(NADM Steering Committee, 2004); <br />(Richard, 2006)</td>
-<td>Conceptual framework for top level geologic concepts &amp; controlled vocabulary for geologic map data</td>
-<td>Conceptual Model; UML</td>
-<td>-</td>
+<td><strong>North American Data Model, Conceptual Model 1.0</strong>: Conceptual framework for top level geologic concepts &amp; controlled vocabulary for geologic map data</td>
+<td>UML</td>
 </tr>
 <tr>
 <td>Geo-ontology</td>
 <td>(Perrin et al., 2005)</td>
-<td>Four schemas formalising structural geologists expert knowledge for 3D models, interpretation &amp; provenance</td>
+<td>An ontology to formalise structural geologist's expert knowledge in relation to computational 3D model assemblages--including interpretation &amp; provenance</td>
 <td>KIF</td>
-<td>-</td>
 </tr>
 <tr>
-<td>Geological Time Ontology</td>
-<td>(Perrin et al., 2011)</td>
-<td></td>
-<td>Conceptual Model; OWL</td>
-<td>Geo-ontology</td>
-</tr>
-<tr>
-<td>Geological Dating Ontology</td>
-<td>(Perrin et al., 2011)</td>
-<td></td>
-<td>Conceptual Model: OWL</td>
-<td>Geo-ontology</td>
+<td><a href="http://sweet.jpl.nasa.gov/">SWEET</a></td>
+<td>(Raskin and Pan, 2005);<br />(Raskin, 2006)</td>
+<td><strong>Semantic Web for Earth and Environmental Terminology</strong>: Modular, self described "middle level" ontology which has become the <em>de facto</em> model for the Earth sciences.  More information is provided in the *notes section of this site.</td>
+<td>OWL-DL</td>
 </tr>
 </tbody>
 </table>
@@ -232,60 +229,200 @@ A curated list of geoscience semantic resources.</p>
 </thead>
 <tbody>
 <tr>
-<td>Basin Ontology</td>
-<td>(Whitehead et al., 2010); <br />(Everett et al., 2011)</td>
-<td></td>
-<td>OWL Full</td>
-<td></td>
+<td>Hierarchical classification of tectonic assemblages</td>
+<td>(Struik and Quat, 2002)</td>
+<td>Describes a schema for classifying lithological assemblages formed in tectonic environments for thematically consistent queries across geologic databases</td>
+<td>conceptual model; hierarchical classification</td>
+<td>NADM-C1</td>
 </tr>
 <tr>
-<td>Fractures Ontology</td>
-<td>(Zhong et al., 2009); <br />(Zhong et al., 2008)</td>
-<td>explicit specifications about fractures, including: properties, deformation mechanisms, formation and evolution.</td>
-<td>OWL-DL</td>
+<td>multihierarchical rock classification scheme</td>
+<td>(Struik et al., 2002)</td>
+<td>Rock classification based on three main rock properties -- composition, texture, and fabric -- for thematically consistent queries across geologic databases</td>
+<td>conceptual model; hierarchical classificaton</td>
+<td>NADM-C1</td>
+</tr>
+<tr>
+<td>Pluton Object Ontology</td>
+<td>(Sinha et al., 2004; 2006)</td>
+<td>A domain model for reasoning about concepts and properties associated with igneous rocks (including a discussion about process models)</td>
+<td>UML; conceptual model</td>
 <td>SWEET</td>
 </tr>
 <tr>
-<td>Hydrogeology Ontology</td>
-<td>(Tripathi and Babaie, 2008)</td>
-<td></td>
-<td></td>
-<td>SWEET</td>
+<td>PetroGrapher</td>
+<td>(Abel et al., 2004a; 2004b; 2005)</td>
+<td>Developed to support analysis in the petrographic domain, primarily visual and diagenetic analysis, using <em>K</em>-graphs (concept-attribute-value triples) in coordination with multiple DBs</td>
+<td>partonomy; sets and slots</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>surface hydrology concepts</em></td>
+<td>(Feng et al., 2004)</td>
+<td>data model for surface hydrology concepts using <em>endurant</em> and <em>perdurant</em> for the semantics of processes</td>
+<td><em>is-a</em> hierarchies and parthood</td>
+<td>DOLCE</td>
+</tr>
+<tr>
+<td><em>eMinerals data handling</em></td>
+<td>(White et al. 2006)</td>
+<td>The "ontology" described in the paper is simply provide a description of the property concept and link it to a dictionary reference</td>
+<td>OWL &amp; RDF</td>
+<td>-</td>
 </tr>
 <tr>
 <td>StructuralGeoOntology</td>
 <td>(Babaie et al., 2006)</td>
-<td></td>
+<td>Preliminary conceptual model of a portion of a structural geology ontology.  Describes a modular approach alluding to other <em>subontologies</em> in the form of Lineation, Foliation, Fault, Joint, and several other structures for common concepts (based on figures 3-5) which would now likely be discussed as Ontology Design Patterns</td>
 <td>UML</td>
-<td></td>
+<td>SWEET</td>
 </tr>
 <tr>
 <td>FractureGeoOntology</td>
 <td>(Babaie et al., 2006)</td>
-<td></td>
-<td>UML</td>
-<td>StructuralGeoOntology</td>
-</tr>
-<tr>
-<td>FoliationGeoOntology</td>
-<td>(Babaie et al., 2006)</td>
-<td></td>
+<td>A <em>subontology</em> of the StructuralGeoOntology</td>
 <td>UML</td>
 <td>StructuralGeoOntology</td>
 </tr>
 <tr>
 <td>FoldGeoOntology</td>
 <td>(Babaie et al., 2006)</td>
-<td></td>
+<td>A <em>subontology</em> of the StructuralGeoOntology</td>
 <td>UML</td>
 <td>StructuralGeoOntology</td>
 </tr>
 <tr>
-<td>pluton object ontology</td>
-<td>(Sinha et al., 2006)</td>
-<td>A domain model for reasoning about processes affecting the rock record</td>
-<td>UML; conceptual model</td>
+<td>Gravity anomaly ontology</td>
+<td>(Gates et al., 2007)</td>
 <td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Plate-tectonics Ontology</td>
+<td>(Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007)</td>
+<td>Plate-tectonics classification using plate boundary, lithosphere, etc.</td>
+<td>OWL-DL</td>
+<td>SWEET; GEON; VSTO</td>
+</tr>
+<tr>
+<td>Volcano Ontology</td>
+<td>(Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007)</td>
+<td>Volcano classification by composition, tectonic setting, environmental setting, eruption type, activity, geologic setting, and landform</td>
+<td>OWL-DL</td>
+<td>SWEET; GEON; VSTO</td>
+</tr>
+<tr>
+<td>Petroleum Basin ontology</td>
+<td>(Nimmagadda et al., 2007)</td>
+<td>Refers to the organisation and normalisation of geophysics data to ensure proper datum matching during analysis (namely, time-depth conversion)</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Exploration Data ontology</td>
+<td>(Nimmagadda et al., 2007; Nimmagadda &amp; Dreher 2008)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Vertical Seismic Profile (VSP) ontology</td>
+<td>(Nimmagadda et al., 2007; Nimmagadda &amp; Dreher 2008)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Common Depth Point (CDP) ontology</td>
+<td>(Nimmagadda et al., 2007; Nimmagadda &amp; Dreher 2008)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Seismic domain ontology</td>
+<td>(Nimmagadda et al., 2007; Nimmagadda &amp; Dreher 2008)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Well-base domain ontology</td>
+<td>(Nimmagadda et al., 2007; Nimmagadda &amp; Dreher 2008)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>2008</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Fractures Ontology</td>
+<td>(Zhong et al., 2008); <br />(Zhong et al., 2009)</td>
+<td>Explicit specifications about the deformation mechanisms affecting geologic structures, including properties as indicators</td>
+<td>OWL-DL</td>
+<td>SWEET &amp; DOLCE</td>
+</tr>
+<tr>
+<td>Hydrogeology Ontology</td>
+<td>(Tripathi and Babaie, 2008)</td>
+<td>Extends (and corrected) portions of SWEET adding concepts and properties related to ground water categories and definitions</td>
+<td>OWL</td>
+<td>SWEET</td>
+</tr>
+<tr>
+<td>Visual ontology</td>
+<td>(Verney et al. 2008)</td>
+<td>A visual concept ontology linking visual data with interpretations; links geologic objects to seismic data</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>2009</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CUAHSI discovery ontology V1.0</td>
+<td>(Piasecki and Beran, 2009); <br />(Beran and Piasecki, 2009)</td>
+<td></td>
+<td>SKOS; OWL-DL</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>2010</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Basin Ontology</td>
+<td>(Whitehead et al., 2010); <br />(Everett et al., 2011)</td>
+<td>Describes the objects, processes and properties as they relate to the basin formation process</td>
+<td>OWL Full</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Magma ontology</td>
+<td>(Fauziati and Watanabe, 2010)</td>
+<td></td>
+<td>UML</td>
+<td>Volcano system ontology</td>
+</tr>
+<tr>
+<td>Micropaleontology ontology</td>
+<td>(Gary &amp; Platon, 2010)</td>
+<td>An ontology for Foraminifera that includes morphologic, taxonomic, biostratigraphic and environmental information</td>
+<td>-</td>
+<td>-</td>
 </tr>
 <tr>
 <td>Volcano system ontology</td>
@@ -303,13 +440,6 @@ A curated list of geoscience semantic resources.</p>
 </tr>
 <tr>
 <td>Volcanic material ontology</td>
-<td>(Fauziati and Watanabe, 2010)</td>
-<td></td>
-<td>UML</td>
-<td>Volcano system ontology</td>
-</tr>
-<tr>
-<td>Magma ontology</td>
 <td>(Fauziati and Watanabe, 2010)</td>
 <td></td>
 <td>UML</td>
@@ -337,18 +467,32 @@ A curated list of geoscience semantic resources.</p>
 <td></td>
 </tr>
 <tr>
-<td>Volcano Ontology</td>
-<td>(Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007)</td>
-<td>Volcano classification</td>
-<td>OWL-DL</td>
-<td>SWEET</td>
+<td><strong>2011</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>Plate-tectonics Ontology</td>
-<td>(Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007)</td>
-<td>Plate-tectonics classification</td>
-<td>OWL-DL</td>
-<td>SWEET</td>
+<td>Geological Time Ontology</td>
+<td>(Perrin et al., 2011)</td>
+<td></td>
+<td>Conceptual Model; OWL</td>
+<td>Geo-ontology</td>
+</tr>
+<tr>
+<td>Geological Dating Ontology</td>
+<td>(Perrin et al., 2011)</td>
+<td></td>
+<td>Conceptual Model: OWL</td>
+<td>Geo-ontology</td>
+</tr>
+<tr>
+<td><strong> 2012</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>Petrology Ontology</td>
@@ -358,113 +502,15 @@ A curated list of geoscience semantic resources.</p>
 <td>-</td>
 </tr>
 <tr>
-<td>Petroleum Basin ontology</td>
-<td>(Nimmagadda et al., 2007)</td>
-<td>Refers to the organisation and normalisation of geophysics data to ensure proper datum matching during analysis (namely, time-depth conversion)</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Exploration ontology</td>
-<td>(Nimmagadda et al., 2007)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Vertical Seismic Profile (VSP) ontology</td>
-<td>(Nimmagadda et al., 2007)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Common Depth Point (CDP) ontology</td>
-<td>(Nimmagadda et al., 2007)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>CUAHSI discovery ontology V1.0</td>
-<td>(Piasecki and Beran, 2009); <br />(Beran and Piasecki, 2009)</td>
-<td></td>
-<td>SKOS; OWL-DL</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Hierarchical classification of tectonic assemblages</td>
-<td>(Struik and Quat, 2002)</td>
-<td>Describes a schema for classifying lithological assemblages formed in tectonic environments</td>
-<td>Hierarchical classificaton</td>
-<td>NADM-C1</td>
-</tr>
-<tr>
-<td>Scheme for rock classification</td>
-<td>(Struik et al., 2002)</td>
-<td>Model for rock classification</td>
-<td>Hierarchical classificaton</td>
-<td>NADM-C1</td>
-</tr>
-<tr>
-<td>PetroGrapher</td>
-<td>(Abel et al., 2004b)</td>
-<td>Developed to illustrate visual tacit knowledge applied to petrographic analysis via rock descriptions</td>
-<td>partonomy; sets and slots</td>
-<td>-</td>
-</tr>
-<tr>
-<td></td>
-<td>(Abel et al., 2005); <br />(Abel et al., 2004a)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
 <td>stratigraphy ontology</td>
 <td>(Abel et al., 2012)</td>
 <td>A formal vocabulary to encode stratigraphy of lithologic logs via sign/icon classification</td>
 <td>-</td>
 <td>-</td>
 </tr>
-<tr>
-<td>Micropaleontology ontology</td>
-<td>(Gary &amp; Platon, 2010)</td>
-<td>An ontology for Foraminifera that includes morphologic, taxonomic, biostratigraphic and environmental information</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Gravity anomaly ontology</td>
-<td>(Gates et al., 2007)</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>surface hydrology <em>concepts</em></td>
-<td>(Feng et al., 2005)</td>
-<td>data model for surface hydrology processes</td>
-<td><em>is-a</em> hierarchies <br /> and parthood</td>
-<td>DOLCE</td>
-</tr>
-<tr>
-<td><em>not named</em></td>
-<td>(White et al. 2006)</td>
-<td></td>
-<td>OWL &amp; RDF</td>
-<td></td>
-</tr>
-<tr>
-<td>Visual ontology</td>
-<td>(Verney et al. 2008)</td>
-<td>A visual concept ontology linking visual data with interpretations; links geologic objects to seismic data</td>
-<td>-</td>
-<td>-</td>
-</tr>
 </tbody>
 </table>
-<h3 id="task-ontologies">task ontologies</h3>
+<h3 id="task-or-process-ontologies">task (or process) ontologies</h3>
 <table>
 <thead>
 <tr>
@@ -476,6 +522,20 @@ A curated list of geoscience semantic resources.</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><em>expert validation tool</em></td>
+<td>(Maechling et al., 2005)</td>
+<td>Uses OWL as a validation mechanism for a Composition Analysis Tool</td>
+<td>OWL</td>
+<td>Wings</td>
+</tr>
+<tr>
+<td>Gravity ontology</td>
+<td>(Salayandia et al., 2006)</td>
+<td>For automatic contouring of gravity anomalies</td>
+<td>OWL</td>
+<td>GEON</td>
+</tr>
 <tr>
 <td>Event Ontology</td>
 <td>(Mastella et al., 2007a)</td>
@@ -489,13 +549,6 @@ A curated list of geoscience semantic resources.</p>
 <td>For correlating spatial and temporal relations - as applied to 3D geologic models</td>
 <td>-</td>
 <td>Geo-ontology</td>
-</tr>
-<tr>
-<td>Gravity ontology</td>
-<td>(Salayandia et al., 2006)</td>
-<td>For automatic contouring of gravity anomalies</td>
-<td>OWL</td>
-<td>GEON</td>
 </tr>
 <tr>
 <td>Gravity-data ontology</td>
@@ -518,13 +571,6 @@ A curated list of geoscience semantic resources.</p>
 <td>OWL-DL</td>
 <td>-</td>
 </tr>
-<tr>
-<td></td>
-<td>(Maechling et al., 2005)</td>
-<td>Uses OWL as a validation mechanism for a Composition Analysis Tool</td>
-<td>OWL</td>
-<td>Wings</td>
-</tr>
 </tbody>
 </table>
 <h3 id="application-ontologies">application ontologies</h3>
@@ -540,11 +586,11 @@ A curated list of geoscience semantic resources.</p>
 </thead>
 <tbody>
 <tr>
-<td>EPONT</td>
-<td>(Malik et al., 2010)</td>
-<td></td>
-<td>UML; conceptual model</td>
-<td>SUO; SWEET; NADM</td>
+<td>ESG ontology</td>
+<td>(Pouchard et al., 2003)</td>
+<td>Uses DublinCore to link metadata and filter data queries</td>
+<td>OWL (may be DAML-OIL)</td>
+<td>DublinCore</td>
 </tr>
 <tr>
 <td>Data and Ontology MAPPING (GEON)</td>
@@ -561,11 +607,18 @@ A curated list of geoscience semantic resources.</p>
 <td>-</td>
 </tr>
 <tr>
-<td>geoonto ontology</td>
-<td>(Xiong et al., 2009)</td>
-<td>An ontology to match Asian science terms to the geoscience world topic hierarchy (AGI thesaurus)</td>
-<td>OWL</td>
-<td>AGI Thesaurus</td>
+<td>Data set Ontology</td>
+<td>(Movva et al., 2005)</td>
+<td>Extends ESML to integrating metadata; coupled with ontologies to allow applications to "use" science data</td>
+<td>DAML-OIL; UML</td>
+<td></td>
+</tr>
+<tr>
+<td><em>Petrography ontology</em> (<em>structure not named</em>)</td>
+<td>(Victoreti et al., 2007)</td>
+<td>Ontology of petrographic descriptions and diagenetic interpretation</td>
+<td><em>knowledge graph</em></td>
+<td>PetroGrapher</td>
 </tr>
 <tr>
 <td>Geologic Ages</td>
@@ -589,41 +642,6 @@ A curated list of geoscience semantic resources.</p>
 <td>see Mastella et al. 2007b (double check)</td>
 </tr>
 <tr>
-<td>ESG ontology</td>
-<td>(Pouchard et al., 2003)</td>
-<td>Uses DublinCore to link metadata and filter data queries</td>
-<td>OWL (may be DAML-OIL)</td>
-<td>DublinCore</td>
-</tr>
-<tr>
-<td><em>Petrography ontology</em> (<em>structure not named</em>)</td>
-<td>(Victoreti et al., 2007)</td>
-<td>Ontology of petrographic descriptions and diagenetic interpretation</td>
-<td><em>knowledge graph</em></td>
-<td>PetroGrapher</td>
-</tr>
-<tr>
-<td>Structural modelling ontology</td>
-<td>(Zhu et al., 2009)</td>
-<td>Created for conflict detection in structural interpretations</td>
-<td></td>
-<td>Geo-ontology</td>
-</tr>
-<tr>
-<td>Data set Ontology</td>
-<td>(Movva et al., 2005)</td>
-<td>Extends ESML to integrating metadata; coupled with ontologies to allow applications to "use" science data</td>
-<td>DAML-OIL; UML</td>
-<td></td>
-</tr>
-<tr>
-<td>event ontology</td>
-<td>(Zhu et al., 2010)</td>
-<td>Well surveillance application; uses OWL for events and SWRL for relationships between events of interest at the surface and sub-surface to monitor underperforming wells</td>
-<td>OWL; SWRL</td>
-<td>-</td>
-</tr>
-<tr>
 <td>Virtual Data Archive (VDA) Ontology</td>
 <td>(Keller et al., 2008)</td>
 <td>Ontologies for metadata integration and translation without a unified metadata standard</td>
@@ -645,8 +663,36 @@ A curated list of geoscience semantic resources.</p>
 <td>-</td>
 </tr>
 <tr>
-<td>ODISEES</td>
+<td>geoonto ontology</td>
+<td>(Xiong et al., 2009)</td>
+<td>An ontology to match Asian science terms to the geoscience world topic hierarchy (AGI thesaurus)</td>
+<td>OWL</td>
+<td>AGI Thesaurus</td>
+</tr>
+<tr>
+<td>Structural modelling ontology</td>
+<td>(Zhu et al., 2009)</td>
+<td>Created for conflict detection in structural interpretations</td>
 <td></td>
+<td>Geo-ontology</td>
+</tr>
+<tr>
+<td>event ontology</td>
+<td>(Zhu et al., 2010)</td>
+<td>Well surveillance application; uses OWL for events and SWRL for relationships between events of interest at the surface and sub-surface to monitor underperforming wells</td>
+<td>OWL; SWRL</td>
+<td>-</td>
+</tr>
+<tr>
+<td>EPONT</td>
+<td>(Malik et al., 2010)</td>
+<td></td>
+<td>UML; conceptual model</td>
+<td>SUO; SWEET; NADM</td>
+</tr>
+<tr>
+<td><a href="http://cmdb.nccs.nasa.gov:8080/odisees/">ODISEES</a></td>
+<td>(Rutherford et al., 2015)</td>
 <td></td>
 <td></td>
 <td></td>
@@ -654,7 +700,7 @@ A curated list of geoscience semantic resources.</p>
 </tbody>
 </table>
 <hr />
-<h3 id="data-models">Data Models</h3>
+<h2 id="data-models">Data Models</h2>
 <ul>
 <li>Resource Description Framework (<a href="https://www.w3.org/TR/owl2-overview/">RDF</a>)</li>
 </ul>
@@ -669,6 +715,12 @@ A curated list of geoscience semantic resources.</p>
 </thead>
 <tbody>
 <tr>
+<td>CHRONOS</td>
+<td>(Fils et al 2006; 2009)</td>
+<td>(RDF and SKOS) Integrating multiple geologic time scales</td>
+<td>GeoSciML</td>
+</tr>
+<tr>
 <td><em>geologic time scale</em></td>
 <td>(Ma et al., 2012)</td>
 <td>Intended for annotating geologic time scales in geologic maps</td>
@@ -677,117 +729,7 @@ A curated list of geoscience semantic resources.</p>
 </tbody>
 </table>
 <hr />
-<h2 id="metadata-xml-schema-data-models">Metadata, XML Schema &amp; Data Models</h2>
-<h3 id="xml-xml-schema">XML &amp; XML Schema</h3>
-<p><em>I do not distinguish between XML and XML Schema.  I assume any raw XML will have sufficient documentation.</em></p>
-<table>
-<thead>
-<tr>
-<th>schema name</th>
-<th>citation</th>
-<th>brief synopsis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="http://www.opengeospatial.org/standards/gml">GML</a></td>
-<td><p>(Portele et al., 2011; 2007);</br> (Lake et al., 2004);</br> (Cox et al., 2003)</p></td>
-<td><strong>Geographic Markup Language</strong>: geographic, or geospatial, objects, including: measurement and observation</td>
-</tr>
-<tr>
-<td><a href="http://www.geosciml.org/">GeoSciML</a></td>
-<td>(Sen and Duffy, 2005)</td>
-<td>Data transfer standard for geological data and applications</td>
-</tr>
-<tr>
-<td><a href="http://www.earthresourceml.org/">EarthResourceML</a></td>
-<td>(Raymond et al., 2012)</td>
-<td>A standard for exchanging information about mineral occurrences, mines, and mining activities.</td>
-</tr>
-<tr>
-<td>EarthquakeML</td>
-<td>(Babaie and Babaei, 2005a)</td>
-<td>Seismology</td>
-</tr>
-<tr>
-<td>TectonicsML</td>
-<td>(Babaie and Babaei, 2005b)</td>
-<td>Seismology</td>
-</tr>
-<tr>
-<td><a href="https://quake.ethz.ch/quakeml">QuakeML</a></td>
-<td>(Schorlemmer and Euchner, 2007)</td>
-<td>Seismology</td>
-</tr>
-<tr>
-<td><a href="http://www.gplates.org/gpml.html">GPML</a></td>
-<td>(Qin et al., 2012)</td>
-<td><strong>GPlates Markup Language</strong>: Geology &amp; Geophysics</td>
-</tr>
-<tr>
-<td><a href="http://water.usgs.gov/XML/NWIS/nwis_hml.htm">HYDROML</a></td>
-<td>(USGS, 2012)</td>
-<td><strong>USGS Hydrologic Markup Language</strong> (also called <em>USGSHydroML</em>): XML tags for hydrologic information</td>
-</tr>
-<tr>
-<td><a href="http://www.opengeospatial.org/standards/waterml">WaterML</a></td>
-<td>(Zaslavsky et al., 2007)</td>
-<td>A standardised model for the representation and exchange of water observation data.</td>
-</tr>
-<tr>
-<td><a href="http://ngwd-bdnes.cits.rncan.gc.ca/service/api_ngwds/en/gwml.html">GWML</a></td>
-<td>(Boisvert and Brodaric, 2007; 2010)</td>
-<td><strong>GroundWater Markup Language</strong>:</td>
-</tr>
-<tr>
-<td><a href="http://www.nws.noaa.gov/ohd/hydroxc/">HydroXC schema</a></td>
-<td>(Piasecki, 2007)</td>
-<td>Water resources</td>
-</tr>
-<tr>
-<td><a href="http://www.bom.gov.au/water/standards/wdtf/">WDTF</a></td>
-<td>(Yu et al., 2011)</td>
-<td><strong>Water Data Transfer Format</strong>:</td>
-</tr>
-<tr>
-<td><a href="http://www.ogcnetwork.net/node/618">SoTerML</a></td>
-<td>(Pourabdollah et al., 2012)</td>
-<td><strong>Soil and Terrain Markup Language</strong>:</td>
-</tr>
-<tr>
-<td>RiverML</td>
-<td>(Jackson and Maidment, 2014); (Jackson et al., 2013)</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="http://www.opengeospatial.org/projects/initiatives/soildataie">SoilML</a></td>
-<td>(Montanarella et al., 2010)</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="http://www.energistics.org/drilling-completions-interventions/witsml-standards/current-standards">WITSML</a></td>
-<td>(Energistics, 2012)</td>
-<td><strong>Well Information Transfer Standard Markup Language</strong>: Energy and Petroleum</td>
-</tr>
-<tr>
-<td><a href="http://www.energistics.org/reservoir/resqml-standards">RESQML</a></td>
-<td>(Energistics, 2011)</td>
-<td><strong>Reservoir Quality Markup Language</strong>: Energy and Petroleum</td>
-</tr>
-<tr>
-<td><a href="http://www.opengeospatial.org/standards/sensorml">SensorML</a></td>
-<td>(Botts and Robin, 2007)</td>
-<td><strong>Sensor Model Language</strong>:</td>
-</tr>
-<tr>
-<td><a href="">Rock.XML</a></td>
-<td>(Jensen et al. 2016)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="thesauri-or-taxonomies">Thesauri or Taxonomies</h3>
+<h2 id="thesauri-or-taxonomies">Thesauri or Taxonomies</h2>
 <table>
 <thead>
 <tr>
@@ -801,21 +743,17 @@ A curated list of geoscience semantic resources.</p>
 <td></td>
 </tr>
 <tr>
-<td><a href="">EARTh</a></td>
-<td>SKOS; (Albertoni et al. 2013)</td>
-</tr>
-<tr>
 <td><em>multi-lingual thesaurus</em></td>
 <td>Represented ordinal hierarchical structure of geological time scale for multiple languages to translate terms in online geologic maps (Ma et al. 2011)</td>
 </tr>
 <tr>
-<td>CHRONOS</td>
-<td>Integrating multiple geologic time scales using SKOS and GeoSciML (Fils et al. 2009)</td>
+<td><a href="">EARTh</a></td>
+<td>SKOS; (Albertoni et al. 2013)</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="glossaries-and-data-dictionaries">Glossaries and Data Dictionaries</h3>
+<h2 id="glossaries-and-data-dictionaries">Glossaries and Data Dictionaries</h2>
 <p><em>Basic sources of geoscience terminology. There are many versions of resources that could populate this section.  These are provided for example only to illustrate overall comprehensiveness.</em></p>
 <table>
 <thead>
@@ -839,7 +777,7 @@ A curated list of geoscience semantic resources.</p>
 </tr>
 <tr>
 <td><a href="http://www.americangeosciences.org/pubs/glossary/">Glossary of Geology</a></td>
-<td>Hard copy glossary. (Also available as a paid app on <a href="https://itunes.apple.com/us/app/glossary-of-geology/id398194234?mt=8">iTunes</a> and <a href="https://play.google.com/store/apps/details?id=org.agiweb.glossaryofgeology&amp;hl=en">Google Play</a>)</td>
+<td>Hard copy glossary. (Also available as an app on <a href="https://itunes.apple.com/us/app/glossary-of-geology/id398194234?mt=8">iTunes</a> and <a href="https://play.google.com/store/apps/details?id=org.agiweb.glossaryofgeology&amp;hl=en">Google Play</a>)</td>
 </tr>
 <tr>
 <td><a href="https://www.geolsoc.org.uk/ks3/gsl/education/resources/rockcycle/page3451.html">GSL Glossary of Terms</a></td>
@@ -855,9 +793,7 @@ A curated list of geoscience semantic resources.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="other-relevant-works">other relevant works</h2>
-<h3 id="foundational-ontologies">Foundational ontologies</h3>
-<p>(explanation)</p>
+<h2 id="works-in-progress">Works in progress</h2>
 <table>
 <thead>
 <tr>
@@ -867,172 +803,7 @@ A curated list of geoscience semantic resources.</p>
 </thead>
 <tbody>
 <tr>
-<td>Science Knowledge Information ontology (SKIo)</td>
-<td></td>
-</tr>
-<tr>
-<td>Descriptive Ontology for Linguistic and Cognitive Engineering <a href="http://www.loa.istc.cnr.it/old/DOLCE.html">(DOLCE)</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Basic Formal Ontology <a href="http://ifomis.uni-saarland.de/bfo/">(BFO)</a></td>
-<td></td>
-</tr>
-<tr>
-<td>COSMO</td>
-<td>see Pat Cassidy paper</td>
-</tr>
-</tbody>
-</table>
-<h3 id="units-and-measurement">Units and measurement</h3>
-<p>(explanation)</p>
-<table>
-<thead>
-<tr>
-<th>name/group/project</th>
-<th>brief synopsis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="http://www.qudt.org/">(QUDT)</a></td>
-<td>(i.e. Quantities, Units, Dimensions and Data Types Ontologies)</td>
-</tr>
-<tr>
-<td>O&amp;M</td>
-<td>(Cox)</td>
-</tr>
-<tr>
-<td>O&amp;M</td>
-<td>(other)</td>
-</tr>
-<tr>
-<td>O&amp;M</td>
-<td>(POSC supported...or maybe it was Energistics...check notes)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="geologic-time">Geologic Time</h3>
-<p><em>should this be separate?</em></p>
-<table>
-<thead>
-<tr>
-<th>name/group/project</th>
-<th>brief synopsis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="geoscience-frameworks-utilizing-semantics">Geoscience frameworks utilizing semantics</h3>
-<table>
-<thead>
-<tr>
-<th>name/group/project</th>
-<th>brief synopsis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GEOscience Network <a href="http://geongrid.org/">GEON</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="http://miningsolutions.itsc.uah.edu/talkoot/">Talkoot</a></td>
-<td>see also <a href="http://wiki.esipfed.org/index.php/Talkoot:_Discover%2C_Tag%2C_Share%2C_and_Reuse_Collaborative_Science_Workflows">esipfed's page</a> and <a href="https://link.springer.com/article/10.1007/s12145-012-0094-y">cite this</a></td>
-</tr>
-<tr>
-<td>Terrestrial Ecosystem Research Network <a href="http://www.tern.org.au/">(TERN)</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Long Term Ecological Research Network <a href="https://lternet.edu/">(LTER Network)</a></td>
-<td></td>
-</tr>
-<tr>
-<td>National Ecological Observatory Network <a href="http://www.neonscience.org/">(NEON)</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="http://mirador.gsfc.nasa.gov/cgi-bin/mirador/presentNavigation.pl?tree=project&amp;CURRENT_CONTEXT=Projects">Mirador</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Multi-sensor Data Synergy Advisor <a href="http://tw.rpi.edu/portal/MDSA">(MDSA)</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="http://noesis.itsc.uah.edu/">Noesis</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="http://sesdi.hao.ucar.edu/">SESDI</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Virtual Solar-Terrestrial Observatory <a href="https://tw.rpi.edu//web/project/VSTO">(VSTO)</a></td>
-<td>(ontologies as well as application)</td>
-</tr>
-<tr>
-<td><a href="http://miningsolutions.itsc.uah.edu/">SAM</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="http://tw.rpi.edu/portal/DQSS">DQSS</a></td>
-<td>(not sure about this one)</td>
-</tr>
-<tr>
-<td><a href="http://tw.rpi.edu/portal/AeroStat">AeroStat</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="geoscience-services">Geoscience services</h3>
-<table>
-<thead>
-<tr>
-<th>name/group/project</th>
-<th>brief synopsis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="http://www.bgs.ac.uk/data/vocabularies/home.html">British Geological Survey Vocabulary web service</a></td>
-<td>Vocabulary web service</td>
-</tr>
-<tr>
-<td><a href="http://www.sissvoc.info/">SISSVoc</a></td>
-<td>the Spatial Information Services Stack Vocabulary Service (CITE)</td>
-</tr>
-<tr>
-<td>OceanLink</td>
-<td>(link; cite-Narock etal and Krishnadi et al)</td>
-</tr>
-<tr>
-<td><a href="http://www.geolink.org/">GeoLink</a></td>
-<td>(CITE - Krishnadi 2015) (<a href="http://schema.geolink.org/1.0/base/main.html">Geolink Base ontology</a> - in RDF)</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="works-in-progress">Works in progress</h3>
-<p><em>material that was culled from an online resource, but hasn't (to my knowledge) been published</em></p>
-<table>
-<thead>
-<tr>
-<th>name/group/project</th>
-<th>brief synopsis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="">Spatial Data WG</a> <a href="">(W3C sponsored)</a></td>
+<td>W3C Spatial Data Working Group (SDWG)</td>
 <td></td>
 </tr>
 <tr>
@@ -1040,35 +811,46 @@ A curated list of geoscience semantic resources.</p>
 <td></td>
 </tr>
 <tr>
-<td>ANU-Linked-Earth-Data ontology</td>
+<td><a href="https://github.com/ANU-Linked-Earth-Data/ontology">ANU-Linked-Earth-Data ontology</a></td>
 <td></td>
 </tr>
 <tr>
 <td>RDA working groups</td>
-<td></td>
+<td>there are several...list them here.</td>
 </tr>
 <tr>
-<td>OGC</td>
-<td></td>
+<td>Open Geospatial Consortium (OGC)</td>
+<td>many</td>
 </tr>
 <tr>
-<td>GTWG</td>
-<td>working group for GeoSciML, EarthResourceML, ... vocabularies</td>
+<td>Geologic Terminology Working Group (GTWG)</td>
+<td>working group for GeoSciML, EarthResourceML, ... vocabularies.  sponsored by International...</td>
+</tr>
+<tr>
+<td>Oceanography and geospatial ontology</td>
+<td>from a blog post?</td>
 </tr>
 <tr>
 <td>others?</td>
 <td></td>
 </tr>
+<tr>
+<td>ToolMatch</td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <hr />
-<p>A <strong><em>big</em></strong> thanks to <a href="https://github.com/roomthily">roomthily</a> for suggesting I have a look at <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>  lists.</p></div>
+<p>A <strong><em>big</em></strong> thanks to <a href="https://github.com/roomthily">roomthily</a> for suggesting I have a look at <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>  lists.</p>
+<p><br /><br />
+<em>"That rug really tied the room together."</em><br />
+-<a href="http://www.imdb.com/character/ch0003518/?ref_=tt_cl_t1">The Dude</a></p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             
-            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <center>Site built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
         <script src="./js/jquery-1.10.2.min.js"></script>
