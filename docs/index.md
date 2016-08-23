@@ -51,42 +51,38 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 | FractureGeoOntology | (Babaie et al., 2006) | A *subontology* of the StructuralGeoOntology | UML | StructuralGeoOntology |
 | FoldGeoOntology | (Babaie et al., 2006) | A *subontology* of the StructuralGeoOntology | UML | StructuralGeoOntology |
 [//]: # (2007)
-| Gravity anomaly ontology | (Gates et al., 2007) |  |  |  |
+| Gravity data ontology | (Gates et al., 2007) | An ontology meant to capture seismic data types in the form of field observations, location information (of point data) and derived data products as well as the methods and products (outputs) associated with the data (i.e. in this sense, provenance) | OWL | WDO; WDO-It! |
 | Plate-tectonics Ontology | (Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007) | Plate-tectonics classification using plate boundary, lithosphere, etc. | OWL-DL | SWEET; GEON; VSTO |
 | Volcano Ontology | (Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007) | Volcano classification by composition, tectonic setting, environmental setting, eruption type, activity, geologic setting, and landform | OWL-DL | SWEET; GEON; VSTO |
 | Petroleum Basin ontology | (Nimmagadda et al., 2007) | Refers to the organisation and normalisation of geophysics data to ensure proper datum matching during analysis (namely, time-depth conversion) | - | - |
-| Exploration Data ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) |  |  |  |
-| Vertical Seismic Profile (VSP) ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) |  |  |  |
-| Common Depth Point (CDP) ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) |  |  |  |
-| Seismic domain ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) |  |  |  |
-| Well-base domain ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) |  |  |  |
-| **2008** | |
+| Exploration Data ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) | Broad view of exploration data types used in seismic surveys and analysis | - | - |
+| Common Depth Point (CDP) ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) | Aligns each depth point, including variation, with other depth points on the vertical and horizontal axes to help with grid alignment | - | Seismic domain ontology; Well-base domain ontology |
+| Seismic domain ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) | Provides a supertype with temporal properties and structure to account for different domains of data representation -- i.e.  CDP, COP (common offset point) dimension, CSP (common source point) dimension and CRP (common receiver point) dimension  | - | CDP |
+| Vertical Seismic Profile (VSP) ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) | Appears to minimize effects of air waves, ground roll, and diffractions to increase signal to noise ratio during post-processing | - | - |
+| Well-base domain ontology | (Nimmagadda et al., 2007; Nimmagadda & Dreher 2008) | Describes relationships of wells -- id, formation top, depth and horizon, with the Seismic domain ontology | - | Seismic domain ontology |
 [//]: # (2008)
-| Fractures Ontology | (Zhong et al., 2008); <br />(Zhong et al., 2009) | Explicit specifications about the deformation mechanisms affecting geologic structures, including properties as indicators | OWL-DL | SWEET & DOLCE |
+|Basic Geology ontology | (Aït Ameur et al. 2008) | Describes geologic objects, units and boundaries, with events as processes at a high level of abstraction  | - | GeoSciML |
+| Fractures Ontology | (Zhong et al., 2008); <br />(Zhong et al., 2009) | Explicit specifications about Faults, Folds, and Fractures as well as the deformation mechanisms, including properties as indicators, affecting geologic structures in the upper crust of the Earth | OWL-DL | SWEET; DOLCE |
 | Hydrogeology Ontology | (Tripathi and Babaie, 2008) | Extends (and corrected) portions of SWEET adding concepts and properties related to ground water categories and definitions | OWL | SWEET |
-| Visual ontology | (Verney et al. 2008) | A visual concept ontology linking visual data with interpretations; links geologic objects to seismic data | - | - |
-| **2009** | |
+| Visual ontology | (Verney et al. 2008) | A visual concept ontology which links geologic objects with visual seismic attributes through defining and formalising visual geologic attributes | - | - |
 [//]: # (2009)
-| CUAHSI discovery ontology V1.0 | (Piasecki and Beran, 2009); <br />(Beran and Piasecki, 2009) |  | SKOS; OWL-DL | - |
-| **2010** |
+| CUAHSI discovery ontology V1.0 | (Piasecki and Beran, 2009); <br />(Beran and Piasecki, 2009) | A *layered* ontology focusing on tagging compounds, variables and terms associated with hydrology, many of which are typical found on NWIS and STORET | SKOS; <br />OWL-DL | - |
 [//]: # (2010)
-| Basin Ontology | (Whitehead et al., 2010); <br />(Everett et al., 2011) | Describes the objects, processes and properties as they relate to the basin formation process | OWL Full | - |
-| Magma ontology | (Fauziati and Watanabe, 2010) |  | UML | Volcano system ontology |
+| Basin Ontology | (Whitehead et al., 2010); <br />(Everett et al., 2011) | Describes the concepts describing the basin formation process from earth surface material to source rock, seal, and reservoir | OWL Full | - |
+| Magma ontology | (Fauziati and Watanabe, 2010) | Focuses on physical and chemical properties and processes of magma as it relates to eruptions | UML | Volcano system ontology |
 | Micropaleontology ontology | (Gary & Platon, 2010) | An ontology for Foraminifera that includes morphologic, taxonomic, biostratigraphic and environmental information | - | - |
-| Volcano system ontology | (Fauziati and Watanabe, 2010) | Concepts organised as a modular representation of volcanic objects and processes | UML | - |
-| Volcanic phenomena ontology | (Fauziati and Watanabe, 2010) |  | UML | Volcano system ontology |
-| Volcanic material ontology | (Fauziati and Watanabe, 2010) |  | UML | Volcano system ontology |
-| Volcanic Hazard ontology | (Fauziati and Watanabe, 2010) |  | UML | Volcano system ontology |
-| Volcanic vulnerability ontology | (Fauziati and Watanabe, 2010) |  | UML | Volcano system ontology |
-| Volcanic hazard management ontology | (Fauziati and Watanabe, 2010) |  | UML |  | Volcanology |
-| **2011** | |
+| Volcano system ontology | (Fauziati and Watanabe, 2010) | Concepts organised as a modular representation of volcanic objects and processes of a volcanic system -- including material, event conditions, setting, and environmental parameters | UML | - |
+| Volcanic phenomena ontology | (Fauziati and Watanabe, 2010) | Internal, external and environmental concepts and properties organised by three top level states: pre-eruption, syn-eruption, and post-eruption | UML | Volcano system ontology |
+| Volcanic material ontology | (Fauziati and Watanabe, 2010) | Solid and fluid material associated with a volcano during and after an eruption | UML | Volcano system ontology |
+| Volcanic Hazard ontology | (Fauziati and Watanabe, 2010) | Describes the physical characteristics of an eruption as well as secondary hazards during dormant periods | UML | Volcano system ontology |
+| Volcanic vulnerability ontology | (Fauziati and Watanabe, 2010) | Describes the social, economic and environmental concepts related to volcanic eruptions | UML | Volcano system ontology |
+| Volcanic hazard management ontology | (Fauziati and Watanabe, 2010) | Describes pre-eruptive concepts like preparation and outreach to syn and post eruptive actions and protocol | UML |  | Volcano system ontology |
 [//]: # (2011)
-| Geological Time Ontology | (Perrin et al., 2011) |  | Conceptual Model; OWL | Geo-ontology |
-| Geological Dating Ontology | (Perrin et al., 2011) |  | Conceptual Model: OWL | Geo-ontology |
-| ** 2012** | |
+| Geological Time Ontology | (Perrin et al., 2011) | Describes the hierarchy of geological periods as they appear in stratigraphical time scales and corresponds between time scales based on fossils or absolute age | Conceptual Model; OWL | Geo-ontology;<br />GeoSciML |
+| Geological Dating Ontology | (Perrin et al., 2011) | Describes the main characteristics of geologic dating by absolute dating and relative methods using stratigraphic scales by linking between the Geological Time ontology and of the Basic Geology ontology | Conceptual Model: OWL | Geo-ontology;<br />Geological Time Ontology<br />Basic Geology ontology<br />GeoSciML |
 [//]: # (2012)
-| Petrology Ontology | (Shkotin et al., 2012) | A formal theory of petrology as a domain model | OWL-DL | - |
-| stratigraphy ontology | (Abel et al., 2012) | A formal vocabulary to encode stratigraphy of lithologic logs via sign/icon classification | - | - |
+| Petrology Ontology | (Shkotin et al., 2012) | A formal theory of petrology using axioms, definitions and theorems | OWL-DL; FOL | - |
+| *Stratigraphy ontology* | (Abel et al., 2012) | A formal vocabulary to encode detailed descriptions about sedimentary structure and textures of depositional facies via outcrops and lithologic logs | - | - |
 
 ### task (or process) ontologies
 
@@ -99,7 +95,6 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 [//]: # (2007)
 | Event Ontology | (Mastella et al., 2007a) | Rules for reasoning about spatio-temporal relationships | - | Geo-ontology; Petrology ontology |
 | EarthModel Ontology | (Mastella et al., 2007b) | For correlating spatial and temporal relations - as applied to 3D geologic models | - | Geo-ontology |
-| Gravity-data ontology | (Gates et al., 2007) | Ontology for gravity data | OWL | - |
 | GravityWDO | (Da Silva et al., 2007) | A gravity data processing ontology | OWL | - |
 | Wings | (Gil et al., 2007) | Generates and runs earthquake science workflows in a distributed environment | OWL-DL | - |
 
@@ -129,8 +124,10 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 [//]: # (2010)
 | event ontology | (Zhu et al., 2010) | Well surveillance application; uses OWL for events and SWRL for relationships between events of interest at the surface and sub-surface to monitor underperforming wells | OWL; SWRL | - |
 | EPONT | (Malik et al., 2010) |  | UML; conceptual model | SUO; SWEET; NADM |
-[//]: # (20XX)
-| [ODISEES](http://cmdb.nccs.nasa.gov:8080/odisees/) | (Rutherford et al., 2015) |  |  |  |
+[//]: # (2014)
+| OceanLink | (Narock etal and Krishnadi et al) |  |  |  |
+[//]: # (2015)
+| [ODISEES](http://cmdb.nccs.nasa.gov:8080/odisees/) | (Rutherford et al., 2015) |  | RDF |  |
 
 
 - - -
@@ -141,6 +138,7 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 | --------- | ---------------- | ---------------------------- | ------------ |
 | CHRONOS | (Fils et al 2006; 2009) | (RDF and SKOS) Integrating multiple geologic time scales | GeoSciML |
 | *geologic time scale* | (Ma et al., 2012) | Intended for annotating geologic time scales in geologic maps | - |
+| [GeoLink](http://www.geolink.org/) | ( Krishnadi 2015) | ([Geolink Base ontology](http://schema.geolink.org/1.0/base/main.html) - in RDF) | |
 
 
 - - -
