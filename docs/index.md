@@ -91,12 +91,12 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 [//]: # (2005)
 | *expert validation tool* | (Maechling et al., 2005) | Uses OWL as a validation mechanism for a Composition Analysis Tool | OWL | Wings |
 [//]: # (2006)
-| Gravity ontology | (Salayandia et al., 2006) | For automatic contouring of gravity anomalies | OWL | GEON |
+| Gravity ontology | (Salayandia et al., 2006; Salcedo 2006) | Describes gravity data types and processing methods for automatic contouring of gravity anomalies (i.e simple to complex Bouguer anomalies) | OWL | GEON |
 [//]: # (2007)
-| Event Ontology | (Mastella et al., 2007a) | Rules for reasoning about spatio-temporal relationships | - | Geo-ontology; Petrology ontology |
-| EarthModel Ontology | (Mastella et al., 2007b) | For correlating spatial and temporal relations - as applied to 3D geologic models | - | Geo-ontology |
-| GravityWDO | (Da Silva et al., 2007) | A gravity data processing ontology | OWL | - |
-| Wings | (Gil et al., 2007) | Generates and runs earthquake science workflows in a distributed environment | OWL-DL | - |
+| Event Ontology | (Mastella et al., 2007a) Event Ordering Reasoning Ontology Applied to Petrology and Geological Modelling | A general ontology of events applied to spatio-temporal reasoning in the geosciences; could be used to delineate sequences (i.e. diagenetic paragenesis) or automatic reconstruction of lithologic assemblages | - | Geo-ontology;<br /> PetroGrapher;<br /> *Petrology Ontology* |
+| EarthModel Ontology | (Mastella et al., 2007b) Knowledge Management for Shared Earth Modelling | The EarthModel ontology describes the the spatio-temporal relationships between geologic objects, geologic events, geological models, and geological assemblages as a mechanism to describe entities like a *formation*; designed as a mechanism to integrate concepts currently relevant in reservoir modelling | - | Geo-ontology;<br /> Event Ontology |
+| GravityWDO | (Da Silva et al., 2007; Salayandia et al., 2006) | A gravity data processing ontology created using the WDO-It method which instantiates specifications from Model-Based Workflows (MBWs) to ontological components (OWL) | OWL | GEON; Gravity Ontology |
+| Wings | (Gil et al., 2007) | Generates and runs workflows (computations) against data sets using semantically described science applications in a distributed computational environment (including scheduling) | OWL-DL | - |
 
 ### application ontologies
 
@@ -109,6 +109,8 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 | data model ontology | (Parekh et al., 2004) | Ontology to model data parameters -- identificaton, spatio-temporal extent, format, etc. | OWL | - |
 [//]: # (2005)
 | Data set Ontology | (Movva et al., 2005) | Extends ESML to integrating metadata; coupled with ontologies to allow applications to "use" science data | DAML-OIL; UML |  |
+[//]: # (2006)
+| CHRONOS | (Fils et al 2006; 2009) | Integrates multiple geologic time scales for querying (also a service) | RDF; SKOS | GeoSciML |
 [//]: # (2007)
 | *Petrography ontology* (*structure not named*) | (Victoreti et al., 2007) | Ontology of petrographic descriptions and diagenetic interpretation | *knowledge graph* | PetroGrapher |
 [//]: # (2008)
@@ -124,22 +126,13 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 [//]: # (2010)
 | event ontology | (Zhu et al., 2010) | Well surveillance application; uses OWL for events and SWRL for relationships between events of interest at the surface and sub-surface to monitor underperforming wells | OWL; SWRL | - |
 | EPONT | (Malik et al., 2010) |  | UML; conceptual model | SUO; SWEET; NADM |
+[//]: # (2012)
+| *geologic time scale* | (Ma et al., 2012) | Intended for annotating geologic time scales in geologic maps | RDF | - |
 [//]: # (2014)
 | OceanLink | (Narock etal and Krishnadi et al) |  |  |  |
 [//]: # (2015)
-| [ODISEES](http://cmdb.nccs.nasa.gov:8080/odisees/) | (Rutherford et al., 2015) |  | RDF |  |
-
-
-- - -
-## Data Models
-- Resource Description Framework ([RDF](https://www.w3.org/TR/owl2-overview/))
-
-| name      | citation         | brief synopsis               | dependencies /<br /> related |
-| --------- | ---------------- | ---------------------------- | ------------ |
-| CHRONOS | (Fils et al 2006; 2009) | (RDF and SKOS) Integrating multiple geologic time scales | GeoSciML |
-| *geologic time scale* | (Ma et al., 2012) | Intended for annotating geologic time scales in geologic maps | - |
-| [GeoLink](http://www.geolink.org/) | ( Krishnadi 2015) | ([Geolink Base ontology](http://schema.geolink.org/1.0/base/main.html) - in RDF) | |
-
+| [ODISEES](http://cmdb.nccs.nasa.gov:8080/odisees/) | (Rutherford et al., 2015) | Classifies measured phenomena via its variables as attributes--as described in ASDC data | RDF | - |
+| [GeoLink](http://www.geolink.org/) | ( Krishnadi 2015) | [Geolink Base ontology](http://schema.geolink.org/1.0/base/main.html) | RDF | |
 
 - - -
 ## Thesauri or Taxonomies
