@@ -1,7 +1,7 @@
 ## references
-numbered references collated from all the web pages on this site.
+numbered references collated from the web pages on this site.
 
-| id | citation                                                          |
+| id  | citation                                                         |
 | --- | -----------------------------------------------------------------|
 | [1] |	McGuinness DL. Ontologies Come of Age. In: Fensel D, Hendler J, Lieberman H, Wahlster W, editors. Spinning the Semantic Web: Bringing the World Wide Web to Its Full Potential, MIT Press; 2003, p. 171–94.
 | [2] |	Obrst L. Ontological Architectures. In: Poli R, Healy M, Kameas A, editors. Theory and Applications of Ontology: Computer Applications, Springer Dordrecht; 2010, p. 27–66.

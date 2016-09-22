@@ -166,7 +166,7 @@
 <br /></p>
 <p><a href="http://creativecommons.org/licenses/by/4.0/"><img alt="" src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" /></a>
 <a href="https://gitter.im/geoscience-semantics/geoscience-semantics.github.io?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="" src="https://badges.gitter.im/geoscience-semantics/geoscience-semantics.github.io.svg" /></a><a href="https://flattr.com/submit/auto?user_id=brandonnodnarb&amp;url=http://www.geoscience-semantics.info&amp;title=awesome_geoscience_semantics&amp;language=en_GB&amp;tags=geosciene,semantics,github&amp;category=semantic_web"><img alt="" src="http://api.flattr.com/button/flattr-badge-large.png" /></a></p>
-<p>This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by/4.0/">CreativeCommons.org</a>.</p>
+<p>The contents of this site is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by/4.0/">CreativeCommons.org</a>.</p>
 <hr />
 <h2 id="preliminaries">Preliminaries</h2>
 <h4 id="on-categorisation">on categorisation</h4>
@@ -222,7 +222,7 @@
 <th>citation</th>
 <th>brief synopsis</th>
 <th>expressivity <br />marker</th>
-<th>dependencies / related</th>
+<th>dependencies /<br /> related</th>
 </tr>
 </thead>
 <tbody>
@@ -238,7 +238,7 @@
 <td>(Struik et al., 2002)</td>
 <td>Rock classification based on three main rock properties -- composition, texture, and fabric -- for thematically consistent queries across geologic databases</td>
 <td>conceptual model; hierarchical classificaton</td>
-<td>NADM-C1</td>
+<td>NADM-C1;<br /> GEON</td>
 </tr>
 <tr>
 <td>Pluton Object Ontology</td>
@@ -290,11 +290,39 @@
 <td>StructuralGeoOntology</td>
 </tr>
 <tr>
+<td>Gravity ontology</td>
+<td>(Salayandia et al., 2006; Salcedo 2006)</td>
+<td>Describes gravity data types and processing methods for automatic contouring of gravity anomalies (i.e simple to complex Bouguer anomalies)</td>
+<td>OWL</td>
+<td>GEON</td>
+</tr>
+<tr>
+<td>EarthModel Ontology</td>
+<td>(Mastella et al., 2007b) Knowledge Management for Shared Earth Modelling</td>
+<td>The EarthModel ontology describes the the spatio-temporal relationships between geologic objects, geologic events, geological models, and geological assemblages as a mechanism to describe entities like a <em>formation</em>; designed as a mechanism to integrate concepts currently relevant in reservoir modelling</td>
+<td>-</td>
+<td>Geo-ontology;<br /> Event Ontology</td>
+</tr>
+<tr>
+<td>Event Ontology</td>
+<td>(Mastella et al., 2007a) Event Ordering Reasoning Ontology Applied to Petrology and Geological Modelling</td>
+<td>A general ontology of events applied to spatio-temporal reasoning in the geosciences; could be used to delineate sequences (i.e. diagenetic paragenesis) or automatic reconstruction of lithologic assemblages</td>
+<td>-</td>
+<td>Geo-ontology;<br /> PetroGrapher;<br /> <em>Petrology Ontology</em></td>
+</tr>
+<tr>
 <td>Gravity data ontology</td>
 <td>(Gates et al., 2007)</td>
 <td>An ontology meant to capture seismic data types in the form of field observations, location information (of point data) and derived data products as well as the methods and products (outputs) associated with the data (i.e. in this sense, provenance)</td>
 <td>OWL</td>
 <td>WDO; WDO-It!</td>
+</tr>
+<tr>
+<td>GravityWDO</td>
+<td>(Da Silva et al., 2007; Salayandia et al., 2006)</td>
+<td>A gravity data processing ontology created using the WDO-It method which instantiates specifications from Model-Based Workflows (MBWs) to ontological components (OWL)</td>
+<td>OWL</td>
+<td>GEON; Gravity Ontology</td>
 </tr>
 <tr>
 <td>Plate-tectonics Ontology</td>
@@ -478,61 +506,54 @@
 <td>-</td>
 <td>-</td>
 </tr>
-</tbody>
-</table>
-<h3 id="task-or-process-ontologies">task (or process) ontologies</h3>
-<table>
-<thead>
 <tr>
-<th>name</th>
-<th>citation</th>
-<th>brief synopsis</th>
-<th>expressivity <br />marker</th>
-<th>dependencies / related</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>expert validation tool</em></td>
-<td>(Maechling et al., 2005)</td>
-<td>Uses OWL as a validation mechanism for a Composition Analysis Tool</td>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Sea Ice ontology</a></td>
+<td>(Duerr et al., 2014)</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; top level ontology (ODP) for describing part of the physical characteristics of ice, as it pertains to a shipping forecast</td>
 <td>OWL</td>
-<td>Wings</td>
+<td>Egg ontology</td>
 </tr>
 <tr>
-<td>Gravity ontology</td>
-<td>(Salayandia et al., 2006; Salcedo 2006)</td>
-<td>Describes gravity data types and processing methods for automatic contouring of gravity anomalies (i.e simple to complex Bouguer anomalies)</td>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Forms of Ice ontology</a></td>
+<td>(Duerr et al., 2014)</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; describes ice forms</td>
 <td>OWL</td>
-<td>GEON</td>
+<td>Sea Ice ontology</td>
 </tr>
 <tr>
-<td>Event Ontology</td>
-<td>(Mastella et al., 2007a) Event Ordering Reasoning Ontology Applied to Petrology and Geological Modelling</td>
-<td>A general ontology of events applied to spatio-temporal reasoning in the geosciences; could be used to delineate sequences (i.e. diagenetic paragenesis) or automatic reconstruction of lithologic assemblages</td>
-<td>-</td>
-<td>Geo-ontology;<br /> PetroGrapher;<br /> <em>Petrology Ontology</em></td>
-</tr>
-<tr>
-<td>EarthModel Ontology</td>
-<td>(Mastella et al., 2007b) Knowledge Management for Shared Earth Modelling</td>
-<td>The EarthModel ontology describes the the spatio-temporal relationships between geologic objects, geologic events, geological models, and geological assemblages as a mechanism to describe entities like a <em>formation</em>; designed as a mechanism to integrate concepts currently relevant in reservoir modelling</td>
-<td>-</td>
-<td>Geo-ontology;<br /> Event Ontology</td>
-</tr>
-<tr>
-<td>GravityWDO</td>
-<td>(Da Silva et al., 2007; Salayandia et al., 2006)</td>
-<td>A gravity data processing ontology created using the WDO-It method which instantiates specifications from Model-Based Workflows (MBWs) to ontological components (OWL)</td>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Ice of Land origin ontology</a></td>
+<td>(Duerr et al., 2014)</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; describes types of ice of land origin now found in the sea</td>
 <td>OWL</td>
-<td>GEON; Gravity Ontology</td>
+<td>Forms of Ice ontology</td>
 </tr>
 <tr>
-<td>Wings</td>
-<td>(Gil et al., 2007)</td>
-<td>Generates and runs workflows (computations) against data sets using semantically described science applications in a distributed computational environment (including scheduling)</td>
-<td>OWL-DL</td>
-<td>-</td>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Sea Ice Concentration ontology</a></td>
+<td>(Duerr et al., 2014)</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; describes concentration of ice now in the ocean</td>
+<td>OWL</td>
+<td>Sea Ice ontology</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Sea Ice Development ontology</a></td>
+<td>(Duerr et al., 2014)</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; describes stages of development for sea ice</td>
+<td>OWL</td>
+<td>Sea Ice ontology</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Egg ontology</a></td>
+<td>(Duerr et al., 2014)</td>
+<td>A "bridge" ontology linking the Sea Ice ontology with the Sigrid 3 ontology as it represents the physical state of sea ice as depicted on ice charts</td>
+<td>OWL</td>
+<td>Sigrid3 ontology;<br /> Sea Ice ontology</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Sigrid 3 ontology</a></td>
+<td>(Duerr et al., 2014)</td>
+<td>Formal representation of the Egg code and shapefile  information portion of a Sigrid 3 data file</td>
+<td>OWL</td>
+<td>Egg ontology</td>
 </tr>
 </tbody>
 </table>
@@ -549,10 +570,10 @@
 </thead>
 <tbody>
 <tr>
-<td>ESG ontology</td>
+<td>ESG <em>ontology</em></td>
 <td>(Pouchard et al., 2003)</td>
-<td>Uses DublinCore to link metadata and filter data queries</td>
-<td>OWL (may be DAML-OIL)</td>
+<td>Describes identity, scientific purpose, datasets, and other concepts and corresponding relationships as they are related to the Earth Systems Grid (ESG) metadata elements</td>
+<td>DAML+OIL</td>
 <td>DublinCore</td>
 </tr>
 <tr>
@@ -577,6 +598,13 @@
 <td></td>
 </tr>
 <tr>
+<td><em>expert validation tool</em></td>
+<td>(Maechling et al., 2005)</td>
+<td>Uses OWL as a validation mechanism for a Composition Analysis Tool</td>
+<td>OWL</td>
+<td>Wings</td>
+</tr>
+<tr>
 <td>CHRONOS</td>
 <td>(Fils et al 2006; 2009)</td>
 <td>Integrates multiple geologic time scales for querying (also a service)</td>
@@ -589,6 +617,20 @@
 <td>Ontology of petrographic descriptions and diagenetic interpretation</td>
 <td><em>knowledge graph</em></td>
 <td>PetroGrapher</td>
+</tr>
+<tr>
+<td>ESIP data ontology</td>
+<td>(Fox et al. 2007)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wings</td>
+<td>(Gil et al., 2007)</td>
+<td>Generates and runs workflows (computations) against data sets using semantically described science applications in a distributed computational environment (including scheduling)</td>
+<td>OWL-DL</td>
+<td>-</td>
 </tr>
 <tr>
 <td>Geologic Ages</td>
@@ -696,21 +738,25 @@
 <thead>
 <tr>
 <th>name/group/project</th>
+<th>citation</th>
 <th>brief synopsis</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="http://www.americangeosciences.org/georef/thesaurus">AGI thesaurus</a></td>
+<td>(Goodman 2012 <br />I think)</td>
 <td></td>
 </tr>
 <tr>
 <td><em>multi-lingual thesaurus</em></td>
-<td>Represented ordinal hierarchical structure of geological time scale for multiple languages to translate terms in online geologic maps (Ma et al. 2011)</td>
+<td>(Ma et al. 2011)</td>
+<td>Represented ordinal hierarchical structure of geological time scale for multiple languages to translate terms in online geologic maps</td>
 </tr>
 <tr>
 <td><a href="">EARTh</a></td>
-<td>SKOS; (Albertoni et al. 2013)</td>
+<td>(Albertoni et al. 2013)</td>
+<td>uses SKOS;</td>
 </tr>
 </tbody>
 </table>

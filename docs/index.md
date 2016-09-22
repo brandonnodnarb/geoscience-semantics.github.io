@@ -2,10 +2,12 @@
 A curated list of geoscience semantic resources.
 <br />
 
+[//]: # (this site is meant to serve as a companion piece to a review paper currently under review -- a draft of the paper can be found on arxiv.org_linky)
+
 [![](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 [![](https://badges.gitter.im/geoscience-semantics/geoscience-semantics.github.io.svg)](https://gitter.im/geoscience-semantics/geoscience-semantics.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)[![](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=brandonnodnarb&url=http://www.geoscience-semantics.info&title=awesome_geoscience_semantics&language=en_GB&tags=geosciene,semantics,github&category=semantic_web)
 
-This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit [CreativeCommons.org](https://creativecommons.org/licenses/by/4.0/).
+The contents of this site is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit [CreativeCommons.org](https://creativecommons.org/licenses/by/4.0/).
 
 - - -
 ## Preliminaries
@@ -36,11 +38,11 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 
 ### domain ontologies
 
-| name      | citation         | brief synopsis               | expressivity <br />marker  |  dependencies / related |
+| name      | citation         | brief synopsis               | expressivity <br />marker  |  dependencies /<br /> related |
 | --------- | ---------------- | ---------------------------- | -------------              | -------------           |
 [//]: # (2002)
 | Hierarchical classification of tectonic assemblages | (Struik and Quat, 2002) | Describes a schema for classifying lithological assemblages formed in tectonic environments for thematically consistent queries across geologic databases | conceptual model; hierarchical classification | NADM-C1 |
-| multihierarchical rock classification scheme | (Struik et al., 2002) | Rock classification based on three main rock properties -- composition, texture, and fabric -- for thematically consistent queries across geologic databases | conceptual model; hierarchical classificaton | NADM-C1 |
+| multihierarchical rock classification scheme | (Struik et al., 2002) | Rock classification based on three main rock properties -- composition, texture, and fabric -- for thematically consistent queries across geologic databases | conceptual model; hierarchical classificaton | NADM-C1;<br /> GEON |
 [//]: # (2004)
 | Pluton Object Ontology | (Sinha et al., 2004; 2006) | A domain model for reasoning about concepts and properties associated with igneous rocks (including a discussion about process models) | UML; conceptual model | SWEET |
 | PetroGrapher | (Abel et al., 2004a; 2004b; 2005) | Developed to support analysis in the petrographic domain, primarily visual and diagenetic analysis, using *K*-graphs (concept-attribute-value triples) in coordination with multiple DBs | partonomy; sets and slots | - |
@@ -50,8 +52,16 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 | StructuralGeoOntology | (Babaie et al., 2006) | Preliminary conceptual model of a portion of a structural geology ontology.  Describes a modular approach alluding to other *subontologies* in the form of Lineation, Foliation, Fault, Joint, and several other structures for common concepts (based on figures 3-5) which would now likely be discussed as Ontology Design Patterns | UML | SWEET |
 | FractureGeoOntology | (Babaie et al., 2006) | A *subontology* of the StructuralGeoOntology | UML | StructuralGeoOntology |
 | FoldGeoOntology | (Babaie et al., 2006) | A *subontology* of the StructuralGeoOntology | UML | StructuralGeoOntology |
+[//]: # (task)
+| Gravity ontology | (Salayandia et al., 2006; Salcedo 2006) | Describes gravity data types and processing methods for automatic contouring of gravity anomalies (i.e simple to complex Bouguer anomalies) | OWL | GEON |
 [//]: # (2007)
+[//]: # (task)
+| EarthModel Ontology | (Mastella et al., 2007b) Knowledge Management for Shared Earth Modelling | The EarthModel ontology describes the the spatio-temporal relationships between geologic objects, geologic events, geological models, and geological assemblages as a mechanism to describe entities like a *formation*; designed as a mechanism to integrate concepts currently relevant in reservoir modelling | - | Geo-ontology;<br /> Event Ontology |
+[//]: # (task)
+| Event Ontology | (Mastella et al., 2007a) Event Ordering Reasoning Ontology Applied to Petrology and Geological Modelling | A general ontology of events applied to spatio-temporal reasoning in the geosciences; could be used to delineate sequences (i.e. diagenetic paragenesis) or automatic reconstruction of lithologic assemblages | - | Geo-ontology;<br /> PetroGrapher;<br /> *Petrology Ontology* |
 | Gravity data ontology | (Gates et al., 2007) | An ontology meant to capture seismic data types in the form of field observations, location information (of point data) and derived data products as well as the methods and products (outputs) associated with the data (i.e. in this sense, provenance) | OWL | WDO; WDO-It! |
+[//]: # (task)
+| GravityWDO | (Da Silva et al., 2007; Salayandia et al., 2006) | A gravity data processing ontology created using the WDO-It method which instantiates specifications from Model-Based Workflows (MBWs) to ontological components (OWL) | OWL | GEON; Gravity Ontology |
 | Plate-tectonics Ontology | (Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007) | Plate-tectonics classification using plate boundary, lithosphere, etc. | OWL-DL | SWEET; GEON; VSTO |
 | Volcano Ontology | (Fox et al., 2007); <br />(McGuinness et al., 2007b); <br />(Sinha et al., 2007) | Volcano classification by composition, tectonic setting, environmental setting, eruption type, activity, geologic setting, and landform | OWL-DL | SWEET; GEON; VSTO |
 | Petroleum Basin ontology | (Nimmagadda et al., 2007) | Refers to the organisation and normalisation of geophysics data to ensure proper datum matching during analysis (namely, time-depth conversion) | - | - |
@@ -83,36 +93,39 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 [//]: # (2012)
 | Petrology Ontology | (Shkotin et al., 2012) | A formal theory of petrology using axioms, definitions and theorems | OWL-DL; FOL | - |
 | *Stratigraphy ontology* | (Abel et al., 2012) | A formal vocabulary to encode detailed descriptions about sedimentary structure and textures of depositional facies via outcrops and lithologic logs | - | - |
+[//]: # (2013)
+[//]: # (2014)
+| [Sea Ice ontology](https://nsidc.org/ssiii/ontology.html) | (Duerr et al., 2014) | Part of "WMO ontologies"--based on WMO nomenclature; top level ontology (ODP) for describing part of the physical characteristics of ice, as it pertains to a shipping forecast | OWL | Egg ontology |
+| [Forms of Ice ontology](https://nsidc.org/ssiii/ontology.html) | (Duerr et al., 2014) | Part of "WMO ontologies"--based on WMO nomenclature; describes ice forms | OWL | Sea Ice ontology |
+| [Ice of Land origin ontology](https://nsidc.org/ssiii/ontology.html) | (Duerr et al., 2014) | Part of "WMO ontologies"--based on WMO nomenclature; describes types of ice of land origin now found in the sea | OWL | Forms of Ice ontology |
+[//]: # (task)
+| [Sea Ice Concentration ontology](https://nsidc.org/ssiii/ontology.html) | (Duerr et al., 2014) | Part of "WMO ontologies"--based on WMO nomenclature; describes concentration of ice now in the ocean | OWL | Sea Ice ontology |
+[//]: # (task)
+| [Sea Ice Development ontology](https://nsidc.org/ssiii/ontology.html) | (Duerr et al., 2014) | Part of "WMO ontologies"--based on WMO nomenclature; describes stages of development for sea ice | OWL | Sea Ice ontology |
+| [Egg ontology](https://nsidc.org/ssiii/ontology.html) | (Duerr et al., 2014) | A "bridge" ontology linking the Sea Ice ontology with the Sigrid 3 ontology as it represents the physical state of sea ice as depicted on ice charts | OWL | Sigrid3 ontology;<br /> Sea Ice ontology |
+| [Sigrid 3 ontology](https://nsidc.org/ssiii/ontology.html) | (Duerr et al., 2014) | Formal representation of the Egg code and shapefile  information portion of a Sigrid 3 data file | OWL | Egg ontology |
+[//]: # (2015)
+[//]: # (2016)
 
-### task (or process) ontologies
-
-| name      | citation         | brief synopsis               | expressivity <br />marker  |  dependencies / related |
-| --------- | ---------------- | ---------------------------- | -------------------------- | -------------           |
-[//]: # (2005)
-| *expert validation tool* | (Maechling et al., 2005) | Uses OWL as a validation mechanism for a Composition Analysis Tool | OWL | Wings |
-[//]: # (2006)
-| Gravity ontology | (Salayandia et al., 2006; Salcedo 2006) | Describes gravity data types and processing methods for automatic contouring of gravity anomalies (i.e simple to complex Bouguer anomalies) | OWL | GEON |
-[//]: # (2007)
-| Event Ontology | (Mastella et al., 2007a) Event Ordering Reasoning Ontology Applied to Petrology and Geological Modelling | A general ontology of events applied to spatio-temporal reasoning in the geosciences; could be used to delineate sequences (i.e. diagenetic paragenesis) or automatic reconstruction of lithologic assemblages | - | Geo-ontology;<br /> PetroGrapher;<br /> *Petrology Ontology* |
-| EarthModel Ontology | (Mastella et al., 2007b) Knowledge Management for Shared Earth Modelling | The EarthModel ontology describes the the spatio-temporal relationships between geologic objects, geologic events, geological models, and geological assemblages as a mechanism to describe entities like a *formation*; designed as a mechanism to integrate concepts currently relevant in reservoir modelling | - | Geo-ontology;<br /> Event Ontology |
-| GravityWDO | (Da Silva et al., 2007; Salayandia et al., 2006) | A gravity data processing ontology created using the WDO-It method which instantiates specifications from Model-Based Workflows (MBWs) to ontological components (OWL) | OWL | GEON; Gravity Ontology |
-| Wings | (Gil et al., 2007) | Generates and runs workflows (computations) against data sets using semantically described science applications in a distributed computational environment (including scheduling) | OWL-DL | - |
 
 ### application ontologies
 
 | name      | citation         | brief synopsis               | expressivity <br />marker  |  dependencies / related |
 | --------- | ---------------- | ---------------------------- | -------------------------- | -------------           |
 [//]: # (2003)
-| ESG ontology | (Pouchard et al., 2003) | Uses DublinCore to link metadata and filter data queries | OWL (may be DAML-OIL) | DublinCore |
+| ESG *ontology* | (Pouchard et al., 2003) | Describes identity, scientific purpose, datasets, and other concepts and corresponding relationships as they are related to the Earth Systems Grid (ESG) metadata elements | DAML+OIL | DublinCore |
 [//]: # (2004)
 | Data and Ontology MAPPING (GEON) | (Lin and Ludäscher, 2004); <br />(Lin and Ludäscher, 2003) | Ontologies for data set registration and integration | OWL-DL | - |
 | data model ontology | (Parekh et al., 2004) | Ontology to model data parameters -- identificaton, spatio-temporal extent, format, etc. | OWL | - |
 [//]: # (2005)
 | Data set Ontology | (Movva et al., 2005) | Extends ESML to integrating metadata; coupled with ontologies to allow applications to "use" science data | DAML-OIL; UML |  |
+| *expert validation tool* | (Maechling et al., 2005) | Uses OWL as a validation mechanism for a Composition Analysis Tool | OWL | Wings |
 [//]: # (2006)
 | CHRONOS | (Fils et al 2006; 2009) | Integrates multiple geologic time scales for querying (also a service) | RDF; SKOS | GeoSciML |
 [//]: # (2007)
 | *Petrography ontology* (*structure not named*) | (Victoreti et al., 2007) | Ontology of petrographic descriptions and diagenetic interpretation | *knowledge graph* | PetroGrapher |
+| ESIP data ontology | (Fox et al. 2007) |  |  |  |
+| Wings | (Gil et al., 2007) | Generates and runs workflows (computations) against data sets using semantically described science applications in a distributed computational environment (including scheduling) | OWL-DL | - |
 [//]: # (2008)
 | Geologic Ages | (Rainaud et al., 2008) | Semantic annotation for geologic knowledge and interpretations | OWL-DL | see Mastella et al. 2007b (double check) |
 | Basic Geology | (Rainaud et al., 2008) | - | OWL-DL | see Mastella et al. 2007b (double check) |
@@ -136,11 +149,11 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 
 - - -
 ## Thesauri or Taxonomies
-| name/group/project      |  brief synopsis                                       |
-| ----------------        | ----------------------------------------------------  |
-| [AGI thesaurus](http://www.americangeosciences.org/georef/thesaurus) |  |
-| *multi-lingual thesaurus* | Represented ordinal hierarchical structure of geological time scale for multiple languages to translate terms in online geologic maps (Ma et al. 2011) |
-| [EARTh]() | SKOS; (Albertoni et al. 2013) |
+| name/group/project      | citation |  brief synopsis                                       |
+| ----------------        | -------- | ----------------------------------------------------  |
+| [AGI thesaurus](http://www.americangeosciences.org/georef/thesaurus) | (Goodman 2012 <br />I think) |  |
+| *multi-lingual thesaurus* | (Ma et al. 2011) | Represented ordinal hierarchical structure of geological time scale for multiple languages to translate terms in online geologic maps |
+| [EARTh]() | (Albertoni et al. 2013) | uses SKOS; |
 
 
 - - -
@@ -171,6 +184,7 @@ Many papers discuss more than one ontology.  In most cases each ontology is refe
 | Oceanography and geospatial ontology | from a blog post? |
 | others? |  |
 | ToolMatch |  |
+[//]: # (SIGRID 3 formatted ice chart data from the Canadian Ice Service have been converted to triples: http://purl.org/nsidc/data/sigrid/sparql )
 
 - - -
 A ***big*** thanks to [roomthily](https://github.com/roomthily) for suggesting I have a look at [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)  lists.
