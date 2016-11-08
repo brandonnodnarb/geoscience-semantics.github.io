@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>ontology rundown - geoscience semantics</title>
+	<title>ontologies - geoscience semantics</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -51,13 +51,13 @@
             
             
                 <li >
-                    <a href="..">home</a>
+                    <a href="..">intro</a>
                 </li>
             
             
             
                 <li class="active">
-                    <a href="./">ontology rundown</a>
+                    <a href="./">ontologies</a>
                 </li>
             
             
@@ -68,35 +68,8 @@
             
             
             
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">about <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    
-                        
-<li >
-    <a href="../intro/">introduction to <br />geoscience semantic models</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../resources/">other resources</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../notes/">*notes</a>
-</li>
-
-                    
-                        
-<li >
-    <a href="../contributing/">contribute</a>
-</li>
-
-                    
-                    </ul>
+                <li >
+                    <a href="../contributing/">contribute</a>
                 </li>
             
             
@@ -138,21 +111,578 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#ontologies-in-a-bit-more-depth">ontologies in a bit more depth</a></li>
+        <li class="main active"><a href="#geoscience-ontologies">geoscience ontologies</a></li>
+        
+            <li><a href="#upper-level-domain-ontologies">upper-level domain ontologies</a></li>
+        
+            <li><a href="#domain-ontologies">domain ontologies</a></li>
+        
+            <li><a href="#application-ontologies">application ontologies</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h2 id="ontologies-in-a-bit-more-depth">ontologies in a bit more depth</h2>
-<p>This page is dedicated to a deeper dive into geoscience ontologies, including their structure, expressivity, related components, etc.</p></div>
+<h1 id="geoscience-ontologies">geoscience ontologies</h1>
+<p><br /></p>
+<p><a href="http://creativecommons.org/licenses/by/4.0/"><img alt="" src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" /></a>
+<a href="https://gitter.im/geoscience-semantics/geoscience-semantics.github.io?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="" src="https://badges.gitter.im/geoscience-semantics/geoscience-semantics.github.io.svg" /></a></p>
+<p>The contents of this site is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit <a href="https://creativecommons.org/licenses/by/4.0/">CreativeCommons.org</a>.</p>
+<hr />
+<h3 id="upper-level-domain-ontologies">upper-level domain ontologies</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>citation</th>
+<th>brief synopsis</th>
+<th>expressivity <br />marker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NADM-C1</td>
+<td>[10-12]</td>
+<td><strong>North American Data Model, Conceptual Model 1.0</strong>: Conceptual framework for top level geologic concepts &amp; controlled vocabulary for geologic map data</td>
+<td>UML</td>
+</tr>
+<tr>
+<td>Geo-ontology</td>
+<td>[13]</td>
+<td>An ontology to formalise structural geologist's expert knowledge in relation to computational 3D model assemblages--including interpretation &amp; provenance</td>
+<td>KIF</td>
+</tr>
+<tr>
+<td><a href="http://sweet.jpl.nasa.gov/">SWEET</a></td>
+<td>[14-16]</td>
+<td><strong>Semantic Web for Earth and Environmental Terminology</strong>: Modular, self described "middle level" ontology which has become the <em>de facto</em> model for the Earth sciences.  More information is provided in the *notes section of this site.</td>
+<td>OWL-DL</td>
+</tr>
+</tbody>
+</table>
+<h3 id="domain-ontologies">domain ontologies</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>citation</th>
+<th>brief synopsis</th>
+<th>expressivity <br />marker</th>
+<th>dependency<br />or related</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hierarchical classification of tectonic assemblages</td>
+<td>[17]</td>
+<td>Describes a schema for classifying lithological assemblages formed in tectonic environments for thematically consistent queries across geologic databases</td>
+<td>conceptual model; hierarchical classification</td>
+<td>NADM-C1</td>
+</tr>
+<tr>
+<td>multihierarchical rock classification scheme</td>
+<td>[18]</td>
+<td>Rock classification based on three main rock properties -- composition, texture, and fabric -- for thematically consistent queries across geologic databases</td>
+<td>conceptual model; hierarchical classificaton</td>
+<td>NADM-C1;<br /> GEON</td>
+</tr>
+<tr>
+<td>Pluton Object Ontology</td>
+<td>[19-20]</td>
+<td>A domain model for reasoning about concepts and properties associated with igneous rocks (including a discussion about process models)</td>
+<td>UML; conceptual model</td>
+<td>SWEET</td>
+</tr>
+<tr>
+<td>PetroGrapher</td>
+<td>[21-23]</td>
+<td>Developed to support analysis in the petrographic domain, primarily visual and diagenetic analysis, using <em>K</em>-graphs (concept-attribute-value triples) in coordination with multiple DBs</td>
+<td>partonomy; sets and slots</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>surface hydrology concepts</em></td>
+<td>[24]</td>
+<td>data model for surface hydrology concepts using <em>endurant</em> and <em>perdurant</em> for the semantics of processes</td>
+<td><em>is-a</em> hierarchies and parthood</td>
+<td>DOLCE</td>
+</tr>
+<tr>
+<td><em>eMinerals data handling</em></td>
+<td>[25]</td>
+<td>The "ontology" described in the paper is simply provide a description of the property concept and link it to a dictionary reference</td>
+<td>OWL &amp; RDF</td>
+<td>-</td>
+</tr>
+<tr>
+<td>StructuralGeoOntology</td>
+<td>[26]</td>
+<td>Preliminary conceptual model of a portion of a structural geology ontology.  Describes a modular approach alluding to other <em>subontologies</em> in the form of Lineation, Foliation, Fault, Joint, and several other structures for common concepts (based on figures 3-5) which would now likely be discussed as Ontology Design Patterns</td>
+<td>UML</td>
+<td>SWEET</td>
+</tr>
+<tr>
+<td>FractureGeoOntology</td>
+<td>[26])</td>
+<td>A <em>subontology</em> of the StructuralGeoOntology</td>
+<td>UML</td>
+<td>StructuralGeoOntology</td>
+</tr>
+<tr>
+<td>FoldGeoOntology</td>
+<td>[26]</td>
+<td>A <em>subontology</em> of the StructuralGeoOntology</td>
+<td>UML</td>
+<td>StructuralGeoOntology</td>
+</tr>
+<tr>
+<td>Gravity ontology</td>
+<td>[27,28]</td>
+<td>Describes gravity data types and processing methods for automatic contouring of gravity anomalies (i.e simple to complex Bouguer anomalies)</td>
+<td>OWL</td>
+<td>GEON</td>
+</tr>
+<tr>
+<td>EarthModel Ontology</td>
+<td>[29]</td>
+<td>The EarthModel ontology describes the the spatio-temporal relationships between geologic objects, geologic events, geological models, and geological assemblages as a mechanism to describe entities like a <em>formation</em>; designed as a mechanism to integrate concepts currently relevant in reservoir modelling</td>
+<td>-</td>
+<td>Geo-ontology;<br /> Event Ontology</td>
+</tr>
+<tr>
+<td>Event Ontology</td>
+<td>[30]</td>
+<td>A general ontology of events applied to spatio-temporal reasoning in the geosciences; could be used to delineate sequences (i.e. diagenetic paragenesis) or automatic reconstruction of lithologic assemblages</td>
+<td>-</td>
+<td>Geo-ontology;<br /> PetroGrapher;<br /> <em>Petrology Ontology</em></td>
+</tr>
+<tr>
+<td>Gravity data ontology</td>
+<td>[31]</td>
+<td>An ontology meant to capture seismic data types in the form of field observations, location information (of point data) and derived data products as well as the methods and products (outputs) associated with the data (i.e. in this sense, provenance)</td>
+<td>OWL</td>
+<td>WDO; WDO-It!</td>
+</tr>
+<tr>
+<td>GravityWDO</td>
+<td>[27,32]</td>
+<td>A gravity data processing ontology created using the WDO-It method which instantiates specifications from Model-Based Workflows (MBWs) to ontological components (OWL)</td>
+<td>OWL</td>
+<td>GEON; Gravity Ontology</td>
+</tr>
+<tr>
+<td>Plate-tectonics Ontology</td>
+<td>[33-35]</td>
+<td>Plate-tectonics classification using plate boundary, lithosphere, etc.</td>
+<td>OWL-DL</td>
+<td>SWEET; GEON; VSTO</td>
+</tr>
+<tr>
+<td>Volcano Ontology</td>
+<td>[33-35]</td>
+<td>Volcano classification by composition, tectonic setting, environmental setting, eruption type, activity, geologic setting, and landform</td>
+<td>OWL-DL</td>
+<td>SWEET; GEON; VSTO</td>
+</tr>
+<tr>
+<td>Petroleum Basin ontology</td>
+<td>[36]</td>
+<td>Refers to the organisation and normalisation of geophysics data to ensure proper datum matching during analysis (namely, time-depth conversion)</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Exploration Data ontology</td>
+<td>[36,37]</td>
+<td>Broad view of exploration data types used in seismic surveys and analysis</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Common Depth Point (CDP) ontology</td>
+<td>[36,37]</td>
+<td>Aligns each depth point, including variation, with other depth points on the vertical and horizontal axes to help with grid alignment</td>
+<td>-</td>
+<td>Seismic domain ontology; Well-base domain ontology</td>
+</tr>
+<tr>
+<td>Seismic domain ontology</td>
+<td>[36,37]</td>
+<td>Provides a supertype with temporal properties and structure to account for different domains of data representation -- i.e.  CDP, COP (common offset point) dimension, CSP (common source point) dimension and CRP (common receiver point) dimension</td>
+<td>-</td>
+<td>CDP</td>
+</tr>
+<tr>
+<td>Vertical Seismic Profile (VSP) ontology</td>
+<td>[36,37]</td>
+<td>Appears to minimize effects of air waves, ground roll, and diffractions to increase signal to noise ratio during post-processing</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Well-base domain ontology</td>
+<td>[36,37]</td>
+<td>Describes relationships of wells -- id, formation top, depth and horizon, with the Seismic domain ontology</td>
+<td>-</td>
+<td>Seismic domain ontology</td>
+</tr>
+<tr>
+<td>Basic Geology ontology</td>
+<td>[38]</td>
+<td>Describes geologic objects, units and boundaries, with events as processes at a high level of abstraction</td>
+<td>-</td>
+<td>GeoSciML</td>
+</tr>
+<tr>
+<td>Fractures Ontology</td>
+<td>[39,40]</td>
+<td>Explicit specifications about Faults, Folds, and Fractures as well as the deformation mechanisms, including properties as indicators, affecting geologic structures in the upper crust of the Earth</td>
+<td>OWL-DL</td>
+<td>SWEET; DOLCE</td>
+</tr>
+<tr>
+<td>Hydrogeology Ontology</td>
+<td>[41]</td>
+<td>Extends (and corrected) portions of SWEET adding concepts and properties related to ground water categories and definitions</td>
+<td>OWL</td>
+<td>SWEET</td>
+</tr>
+<tr>
+<td>Visual ontology</td>
+<td>[42]</td>
+<td>A visual concept ontology which links geologic objects with visual seismic attributes through defining and formalising visual geologic attributes</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>CUAHSI discovery ontology V1.0</td>
+<td>[43,44]</td>
+<td>A <em>layered</em> ontology focusing on tagging compounds, variables and terms associated with hydrology, many of which are typical found on NWIS and STORET</td>
+<td>SKOS; <br />OWL-DL</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Basin Ontology</td>
+<td>[45,46]</td>
+<td>Describes the concepts describing the basin formation process from earth surface material to source rock, seal, and reservoir</td>
+<td>OWL Full</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Magma ontology</td>
+<td>[47]</td>
+<td>Focuses on physical and chemical properties and processes of magma as it relates to eruptions</td>
+<td>UML</td>
+<td>Volcano system ontology</td>
+</tr>
+<tr>
+<td>Micropaleontology ontology</td>
+<td>[48]</td>
+<td>An ontology for Foraminifera that includes morphologic, taxonomic, biostratigraphic and environmental information</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Volcano system ontology</td>
+<td>[47]</td>
+<td>Concepts organised as a modular representation of volcanic objects and processes of a volcanic system -- including material, event conditions, setting, and environmental parameters</td>
+<td>UML</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Volcanic phenomena ontology</td>
+<td>[47]</td>
+<td>Internal, external and environmental concepts and properties organised by three top level states: pre-eruption, syn-eruption, and post-eruption</td>
+<td>UML</td>
+<td>Volcano system ontology</td>
+</tr>
+<tr>
+<td>Volcanic material ontology</td>
+<td>[47]</td>
+<td>Solid and fluid material associated with a volcano during and after an eruption</td>
+<td>UML</td>
+<td>Volcano system ontology</td>
+</tr>
+<tr>
+<td>Volcanic Hazard ontology</td>
+<td>[47]</td>
+<td>Describes the physical characteristics of an eruption as well as secondary hazards during dormant periods</td>
+<td>UML</td>
+<td>Volcano system ontology</td>
+</tr>
+<tr>
+<td>Volcanic vulnerability ontology</td>
+<td>[47]</td>
+<td>Describes the social, economic and environmental concepts related to volcanic eruptions</td>
+<td>UML</td>
+<td>Volcano system ontology</td>
+</tr>
+<tr>
+<td>Volcanic hazard management ontology</td>
+<td>[47]</td>
+<td>Describes pre-eruptive concepts like preparation and outreach to syn and post eruptive actions and protocol</td>
+<td>UML</td>
+<td>Volcano system ontology</td>
+</tr>
+<tr>
+<td>Geological Time Ontology</td>
+<td>[49]</td>
+<td>Describes the hierarchy of geological periods as they appear in stratigraphical time scales and corresponds between time scales based on fossils or absolute age</td>
+<td>Conceptual Model; OWL</td>
+<td>Geo-ontology;<br />GeoSciML</td>
+</tr>
+<tr>
+<td>Geological Dating Ontology</td>
+<td>[49]</td>
+<td>Describes the main characteristics of geologic dating by absolute dating and relative methods using stratigraphic scales by linking between the Geological Time ontology and of the Basic Geology ontology</td>
+<td>Conceptual Model: OWL</td>
+<td>Geo-ontology;<br />Geological Time Ontology<br />Basic Geology ontology<br />GeoSciML</td>
+</tr>
+<tr>
+<td>Petrology Ontology</td>
+<td>[50]</td>
+<td>A formal theory of petrology using axioms, definitions and theorems</td>
+<td>OWL-DL; FOL</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>Stratigraphy ontology</em></td>
+<td>[51]</td>
+<td>A formal vocabulary to encode detailed descriptions about sedimentary structure and textures of depositional facies via outcrops and lithologic logs</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Sea Ice ontology</a></td>
+<td>[52]</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; top level ontology (ODP) for describing part of the physical characteristics of ice, as it pertains to a shipping forecast</td>
+<td>OWL</td>
+<td>Egg ontology</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Forms of Ice ontology</a></td>
+<td>[52]</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; describes ice forms</td>
+<td>OWL</td>
+<td>Sea Ice ontology</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Ice of Land origin ontology</a></td>
+<td>[52]</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; describes types of ice of land origin now found in the sea</td>
+<td>OWL</td>
+<td>Forms of Ice ontology</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Sea Ice Concentration ontology</a></td>
+<td>[52]</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; describes concentration of ice now in the ocean</td>
+<td>OWL</td>
+<td>Sea Ice ontology</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Sea Ice Development ontology</a></td>
+<td>[52]</td>
+<td>Part of "WMO ontologies"--based on WMO nomenclature; describes stages of development for sea ice</td>
+<td>OWL</td>
+<td>Sea Ice ontology</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Egg ontology</a></td>
+<td>[52]</td>
+<td>A "bridge" ontology linking the Sea Ice ontology with the Sigrid 3 ontology as it represents the physical state of sea ice as depicted on ice charts</td>
+<td>OWL</td>
+<td>Sigrid3 ontology;<br /> Sea Ice ontology</td>
+</tr>
+<tr>
+<td><a href="https://nsidc.org/ssiii/ontology.html">Sigrid 3 ontology</a></td>
+<td>[52]</td>
+<td>Formal representation of the Egg code and shapefile  information portion of a Sigrid 3 data file</td>
+<td>OWL</td>
+<td>Egg ontology</td>
+</tr>
+</tbody>
+</table>
+<h3 id="application-ontologies">application ontologies</h3>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>citation</th>
+<th>brief synopsis</th>
+<th>expressivity <br />marker</th>
+<th>dependency<br />or related</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESG <em>ontology</em></td>
+<td>[53]</td>
+<td>Describes identity, scientific purpose, datasets, and other concepts and corresponding relationships as they are related to the Earth Systems Grid (ESG) metadata elements</td>
+<td>DAML+OIL</td>
+<td>DublinCore</td>
+</tr>
+<tr>
+<td>Data registration ontologies</td>
+<td>[54,55]</td>
+<td>Ontologies for data set registration and integration (GEONgrid)</td>
+<td>OWL-DL</td>
+<td>-</td>
+</tr>
+<tr>
+<td>data model ontology</td>
+<td>[56]</td>
+<td>Ontology to model data parameters -- identificaton, spatio-temporal extent, format, etc.</td>
+<td>OWL</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Data set Ontology</td>
+<td>[57]</td>
+<td>Extends ESML to integrating metadata; coupled with ontologies to allow applications to "use" science data</td>
+<td>DAML-OIL; UML</td>
+<td></td>
+</tr>
+<tr>
+<td>CHRONOS</td>
+<td>[58,59]</td>
+<td>Integrates multiple geologic time scales for querying (also a service)</td>
+<td>RDF; SKOS</td>
+<td>GeoSciML</td>
+</tr>
+<tr>
+<td><em>Petrography ontology</em></td>
+<td>[60]</td>
+<td>Ontology of petrographic descriptions and diagenetic interpretation</td>
+<td><em>knowledge graph</em></td>
+<td>PetroGrapher</td>
+</tr>
+<tr>
+<td>ESIP data ontology</td>
+<td>[61]</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wings</td>
+<td>[62]</td>
+<td>Generates and runs workflows (computations) against data sets using semantically described science applications in a distributed computational environment (including scheduling)</td>
+<td>OWL-DL</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Geologic Ages</td>
+<td>[63]</td>
+<td>Semantic annotation for geologic knowledge and interpretations</td>
+<td>OWL-DL</td>
+<td>see Mastella et al. 2007b (double check)</td>
+</tr>
+<tr>
+<td>Basic Geology</td>
+<td>[63]</td>
+<td>-</td>
+<td>OWL-DL</td>
+<td>see Mastella et al. 2007b (double check)</td>
+</tr>
+<tr>
+<td>Geographical Terms</td>
+<td>[63]</td>
+<td>-</td>
+<td>OWL-DL</td>
+<td>see Mastella et al. 2007b (double check)</td>
+</tr>
+<tr>
+<td>Virtual Data Archive (VDA) Ontology</td>
+<td>[64]</td>
+<td>Ontologies for metadata integration and translation without a unified metadata standard</td>
+<td>RDF</td>
+<td>-</td>
+</tr>
+<tr>
+<td>BGC-DAAC Data Archive Ontology</td>
+<td>[64]</td>
+<td>-</td>
+<td>RDF</td>
+<td>-</td>
+</tr>
+<tr>
+<td>STEWARDS Data Archive Ontology</td>
+<td>[64]</td>
+<td>-</td>
+<td>RDF</td>
+<td>-</td>
+</tr>
+<tr>
+<td>geoonto ontology</td>
+<td>[65]</td>
+<td>An ontology to match Asian science terms to the geoscience world topic hierarchy (AGI thesaurus)</td>
+<td>OWL</td>
+<td>AGI Thesaurus</td>
+</tr>
+<tr>
+<td>Structural modelling ontology</td>
+<td>[66]</td>
+<td>Created for conflict detection in structural interpretations</td>
+<td></td>
+<td>Geo-ontology</td>
+</tr>
+<tr>
+<td>event ontology</td>
+<td>[67]</td>
+<td>Well surveillance application; uses OWL for events and SWRL for relationships between events of interest at the surface and sub-surface to monitor underperforming wells</td>
+<td>OWL; SWRL</td>
+<td>-</td>
+</tr>
+<tr>
+<td>EPONT</td>
+<td>[68]</td>
+<td></td>
+<td>UML; conceptual model</td>
+<td>SUO; SWEET; NADM</td>
+</tr>
+<tr>
+<td><em>geologic time scale</em></td>
+<td>[69]</td>
+<td>Intended for annotating geologic time scales in geologic maps</td>
+<td>RDF</td>
+<td>-</td>
+</tr>
+<tr>
+<td>OceanLink</td>
+<td>[70]</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://cmdb.nccs.nasa.gov:8080/odisees/">ODISEES</a></td>
+<td>[71]</td>
+<td>Classifies measured phenomena via its variables as attributes--as described in ASDC data</td>
+<td>RDF</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="http://www.geolink.org/">GeoLink</a></td>
+<td>[72]</td>
+<td><a href="http://schema.geolink.org/1.0/base/main.html">Geolink Base ontology</a></td>
+<td>RDF</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>A <strong><em>big</em></strong> thanks to <a href="https://github.com/roomthily">roomthily</a> for suggesting I have a look at <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>  lists.</p>
+<p><br />
+<em>"That rug really tied the room together."</em><br />
+-<a href="http://www.imdb.com/character/ch0003518/?ref_=tt_cl_t1">The Dude</a></p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             
-            <center>Site built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <center>Built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
         <script src="../js/jquery-1.10.2.min.js"></script>

@@ -6,15 +6,25 @@ site_description: awesome geoscience semantic models
 site_author: brandon whitehead
 
 pages:
-- ontologies: index.md
-#- ontologies: ontologies.md
-- XML: xml.md
-- related: related.md
+- intro: index.md
+- ontologies: ontologies.md
+#   - 'domain ontologies':
+#   - 'application ontologies':
+#- related:
+#    - 'top-level ontologies': toplevel.md
+#    - measurement and units: measurement.md
+#    - XML schemata: xml.md
+#    - vocabularies: vocabularies.md
+#    - 'semantic frameworks/services': framevices.md
+#    - 'works in progress': worksInProgress.md
+#- other resources:
+#    - introduction to <br />geoscience semantics: intro.md
+#    - '* notes': notes.md
+#    - 'community information': resources.md
+#    - blog:
+#        - 'test1': 'blog/test1.md'
+#    - contribute: contributing.md
 - references: refs.md
-- about:
-    - 'introduction to <br />geoscience semantic models': 'intro.md'
-    - 'other resources': 'resources.md'
-    - '*notes': 'notes.md'
-    - 'contribute': 'contributing.md'
+- contribute: contributing.md
 
 theme: yeti

@@ -1,9 +1,7 @@
-## XML Schema
+## XML schemata
 [![](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 
-*I do not distinguish between XML and XML Schema.  I assume any raw XML will have sufficient documentation.*
-
-| schema name      | citation             | brief synopsis                                       |
+| schema name      | citation             | very brief synopsis                                       |
 | ---------------- | -------------------- | ---------------------------------------------------- |
 | [GML](http://www.opengeospatial.org/standards/gml) | <p>(Portele et al., 2011; 2007);</br> (Lake et al., 2004);</br> (Cox et al., 2003)</p>     | **Geographic Markup Language**: geographic, or geospatial, objects, including: measurement and observation |
 | [GeoSciML](http://www.geosciml.org/) | (Sen and Duffy, 2005) | Data transfer standard for geological data and applications |

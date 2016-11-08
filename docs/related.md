@@ -1,5 +1,5 @@
 ## foundational ontologies
-Top-level structures; typically focused on a philosophical world view.
+Top-level structures; typically focused on a philosophical or "world" view.
 
 | name/group/project      | citation | brief synopsis                                       |
 | ----------------        | -------- | ---------------------------------------------------- |
