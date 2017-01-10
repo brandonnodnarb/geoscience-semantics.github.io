@@ -11,7 +11,7 @@ pages:
 #   - 'domain ontologies':
 #   - 'application ontologies':
 #- related:
-#    - 'top-level ontologies': toplevel.md
+#    - 'foundational ontologies': foundational.md
 #    - measurement and units: measurement.md
 #    - XML schemata: xml.md
 #    - vocabularies: vocabularies.md

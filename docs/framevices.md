@@ -18,3 +18,12 @@
 | [AeroStat](http://tw.rpi.edu/portal/AeroStat) |  |
 | [British Geological Survey Vocabulary web service](http://www.bgs.ac.uk/data/vocabularies/home.html) | Vocabulary web service |
 | [SISSVoc](http://www.sissvoc.info/) | the Spatial Information Services Stack Vocabulary Service (CITE) |
+
+[GeoLink](http://www.geolink.org/)
+CHRONOS
+ODISEES
+OceanLink
+SEEK
+ISIS
+AnnoTerra (see keller et al., 2008)
+DIA and SEDRE (see Malik et al 2010 -- EPONT paper)

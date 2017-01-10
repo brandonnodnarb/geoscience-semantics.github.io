@@ -22,3 +22,6 @@
 | [WITSML](http://www.energistics.org/drilling-completions-interventions/witsml-standards/current-standards) | (Energistics, 2012) | **Well Information Transfer Standard Markup Language**: Energy and Petroleum |
 | RiverML | (Jackson and Maidment, 2014); (Jackson et al., 2013) |  |
 | [Rock.XML]() | (Jensen et al. 2016) |  |
+
+[//]: # ( ESML; Earth Science Markup Language (?)  see Ramachandran et al 2004 ---zotero )
+[//]: # ( GES--Geological evolution schema-- see Perrin 1998(?) -- which represents surfaces and the temporal relations between them -- extended by Perrin et al 2011 )

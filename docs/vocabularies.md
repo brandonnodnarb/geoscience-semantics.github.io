@@ -13,7 +13,7 @@ The contents of this site is licensed under the Creative Commons Attribution 4.0
 | ----------------        | -------- | ----------------------------------------------------  |
 | [AGI thesaurus](http://www.americangeosciences.org/georef/thesaurus) | (Goodman 2012 <br />I think) |  |
 | *multi-lingual thesaurus* | (Ma et al. 2011) | Represented ordinal hierarchical structure of geological time scale for multiple languages to translate terms in online geologic maps |
-| [EARTh]() | (Albertoni et al. 2013) | uses SKOS; |
+| [EARTh]() | (Albertoni et al. 2013) | uses SKOS; http://aims.fao.org/vest-registry/vocabularies/earth-thesaurus |
 
 - - -
 

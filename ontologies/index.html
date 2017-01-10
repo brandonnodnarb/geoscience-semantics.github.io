@@ -94,7 +94,7 @@
                 </li>
                 
                 <li>
-                    <a href="https://github.com/geoscience-semantics/geoscience-semantics.github.io">
+                    <a href="https://github.com/brandonnodnarb/geoscience-semantics.github.io">
                         
                             <i class="fa fa-github"></i>
                         
@@ -195,11 +195,11 @@
 <td>SWEET</td>
 </tr>
 <tr>
-<td>PetroGrapher</td>
-<td>[21-23]</td>
+<td>petrographic ontology</td>
+<td>[21-23, 60]</td>
 <td>Developed to support analysis in the petrographic domain, primarily visual and diagenetic analysis, using <em>K</em>-graphs (concept-attribute-value triples) in coordination with multiple DBs</td>
 <td>partonomy; sets and slots</td>
-<td>-</td>
+<td>PetroGrapher</td>
 </tr>
 <tr>
 <td><em>surface hydrology concepts</em></td>
@@ -246,13 +246,13 @@
 <tr>
 <td>EarthModel Ontology</td>
 <td>[29]</td>
-<td>The EarthModel ontology describes the the spatio-temporal relationships between geologic objects, geologic events, geological models, and geological assemblages as a mechanism to describe entities like a <em>formation</em>; designed as a mechanism to integrate concepts currently relevant in reservoir modelling</td>
+<td>The EarthModel ontology describes the the spatio-temporal relationships between geologic objects, geologic events, geological models, and geological assemblages as a mechanism to describe entities like a <em>formation</em>; designed as a mechanism to integrate concepts currently relevant in reservoir modelling; an extension of [13]</td>
 <td>-</td>
 <td>Geo-ontology;<br /> Event Ontology</td>
 </tr>
 <tr>
-<td>Event Ontology</td>
-<td>[30]</td>
+<td>GeologicalEvent Ontology</td>
+<td>[30,29]</td>
 <td>A general ontology of events applied to spatio-temporal reasoning in the geosciences; could be used to delineate sequences (i.e. diagenetic paragenesis) or automatic reconstruction of lithologic assemblages</td>
 <td>-</td>
 <td>Geo-ontology;<br /> PetroGrapher;<br /> <em>Petrology Ontology</em></td>
@@ -498,7 +498,7 @@
 <tr>
 <td><a href="https://nsidc.org/ssiii/ontology.html">Sigrid 3 ontology</a></td>
 <td>[52]</td>
-<td>Formal representation of the Egg code and shapefile  information portion of a Sigrid 3 data file</td>
+<td>Formal representation of the Egg code and shapefile information portion of a Sigrid 3 data file</td>
 <td>OWL</td>
 <td>Egg ontology</td>
 </tr>
@@ -524,165 +524,146 @@
 <td>DublinCore</td>
 </tr>
 <tr>
-<td>Data registration ontologies</td>
+<td><em>GEON data ontologies</em></td>
 <td>[54,55]</td>
-<td>Ontologies for data set registration and integration (GEONgrid)</td>
+<td>Ontologies for data set registration and integration as an underlying component of the GEOscience Network (GEON)</td>
 <td>OWL-DL</td>
 <td>-</td>
 </tr>
 <tr>
-<td>data model ontology</td>
+<td>Data Model ontology</td>
 <td>[56]</td>
-<td>Ontology to model data parameters -- identificaton, spatio-temporal extent, format, etc.</td>
+<td>The ontology provides a standard vocabulary for dataset registration---i.e. identification, spatio-temporal extent, format, etc.</td>
 <td>OWL</td>
 <td>-</td>
 </tr>
 <tr>
-<td>Data set Ontology</td>
+<td>Data set ontology</td>
 <td>[57]</td>
-<td>Extends ESML to integrating metadata; coupled with ontologies to allow applications to "use" science data</td>
+<td>Models data set properties such as: projection; spatial, vertical, and temporal values</td>
 <td>DAML-OIL; UML</td>
-<td></td>
+<td>ESML;<br />subsetting ontology</td>
 </tr>
 <tr>
-<td>CHRONOS</td>
+<td>subsetting ontology</td>
+<td>[57]</td>
+<td>Describes rules for subsetting datasets via spatial or temporal dimensions; spatial subsetting can be horizontal (Lat, Long) or vertical (measured value)</td>
+<td>DAML-OIL; UML</td>
+<td>ESML;<br />Data set ontology</td>
+</tr>
+<tr>
+<td>CHRONOS thesauri</td>
 <td>[58,59]</td>
-<td>Integrates multiple geologic time scales for querying (also a service)</td>
-<td>RDF; SKOS</td>
-<td>GeoSciML</td>
-</tr>
-<tr>
-<td><em>Petrography ontology</em></td>
-<td>[60]</td>
-<td>Ontology of petrographic descriptions and diagenetic interpretation</td>
-<td><em>knowledge graph</em></td>
-<td>PetroGrapher</td>
-</tr>
-<tr>
-<td>ESIP data ontology</td>
-<td>[61]</td>
-<td></td>
-<td></td>
-<td></td>
+<td>CHRONOS uses taxonomic models of timescale (i.e. GeoSciML time) and thesauri (i.e. phylogeny) as a translation schema to integrate multiple datasets and services</td>
+<td>RDF; SKOS; Microformats</td>
+<td>GML; GeoSciML; DublinCore; FOAF</td>
 </tr>
 <tr>
 <td>Wings</td>
 <td>[62]</td>
-<td>Generates and runs workflows (computations) against data sets using semantically described science applications in a distributed computational environment (including scheduling)</td>
+<td>Generates and runs workflows (computational) against data sets using semantically described science applications in a distributed computational environment</td>
 <td>OWL-DL</td>
 <td>-</td>
 </tr>
 <tr>
-<td>Geologic Ages</td>
-<td>[63]</td>
-<td>Semantic annotation for geologic knowledge and interpretations</td>
+<td>Geological Time ontology</td>
+<td>[63,29]</td>
+<td>for defining and managing geologic ages</td>
 <td>OWL-DL</td>
-<td>see Mastella et al. 2007b (double check)</td>
+<td>Geo-ontology</td>
 </tr>
 <tr>
-<td>Basic Geology</td>
-<td>[63]</td>
-<td>-</td>
+<td>Basic Geology ontologies</td>
+<td>[63,29]</td>
+<td>Ontologies for describing "basic" geologic constructs such as: unit, lithology, processes and boundaries</td>
 <td>OWL-DL</td>
-<td>see Mastella et al. 2007b (double check)</td>
+<td>Geo-ontology</td>
 </tr>
 <tr>
-<td>Geographical Terms</td>
-<td>[63]</td>
-<td>-</td>
+<td>GeoLocalization ontology</td>
+<td>[63,29]</td>
+<td>geographical terms ontology; utilising geopolitical boundaries and nomenclature</td>
 <td>OWL-DL</td>
-<td>see Mastella et al. 2007b (double check)</td>
+<td>-</td>
 </tr>
 <tr>
 <td>Virtual Data Archive (VDA) Ontology</td>
 <td>[64]</td>
-<td>Ontologies for metadata integration and translation without a unified metadata standard</td>
+<td>An ontology serving as an upper-level ontology, or cross-walk, consisting of common concepts across source data archive (SDA) ontologies.  The two SDA ontologies described are the STEWARDS ontology and BGC-DAAC ontology</td>
 <td>RDF</td>
 <td>-</td>
 </tr>
 <tr>
 <td>BGC-DAAC Data Archive Ontology</td>
 <td>[64]</td>
-<td>-</td>
+<td>Ontology derived directly from the metadata language for this specific data archive</td>
 <td>RDF</td>
-<td>-</td>
+<td>VDA ontology</td>
 </tr>
 <tr>
 <td>STEWARDS Data Archive Ontology</td>
 <td>[64]</td>
-<td>-</td>
+<td>Ontology derived directly from the relational database schema for this specific data archive</td>
 <td>RDF</td>
-<td>-</td>
+<td>VDA ontology</td>
 </tr>
 <tr>
 <td>geoonto ontology</td>
 <td>[65]</td>
-<td>An ontology to match Asian science terms to the geoscience world topic hierarchy (AGI thesaurus)</td>
+<td>An ontology to map Asian science terms to the geoscience world topic hierarchy (AGI thesaurus)</td>
 <td>OWL</td>
 <td>AGI Thesaurus</td>
 </tr>
 <tr>
 <td>Structural modelling ontology</td>
 <td>[66]</td>
-<td>Created for conflict detection in structural interpretations</td>
+<td>Created to detect conflicts in geologist's structural interpretations of data</td>
 <td></td>
 <td>Geo-ontology</td>
 </tr>
 <tr>
 <td>event ontology</td>
 <td>[67]</td>
-<td>Well surveillance application; uses OWL for events and SWRL for relationships between events of interest at the surface and sub-surface to monitor underperforming wells</td>
+<td>Well surveillance application; uses OWL to model events and SWRL to capture relationships between events of interest at the surface and sub-surface to monitor underperforming wells</td>
 <td>OWL; SWRL</td>
 <td>-</td>
 </tr>
 <tr>
 <td>EPONT</td>
 <td>[68]</td>
-<td></td>
+<td><strong>Earth and Planetary ONTology</strong>; A domain level application ontology to connect geoscience ontologies (primarly SWEET) and XML schemata via registration in an effort to interoperate information from heterogeneous geologic data sets</td>
 <td>UML; conceptual model</td>
-<td>SUO; SWEET; NADM</td>
+<td>SUO; SWEET; NADM; GEON</td>
 </tr>
 <tr>
-<td><em>geologic time scale</em></td>
+<td>GTS ontology</td>
 <td>[69]</td>
-<td>Intended for annotating geologic time scales in geologic maps</td>
+<td><strong>geologic time scale ontology</strong>; Structure created to annotate geologic time as depicted in geologic maps</td>
 <td>RDF</td>
 <td>-</td>
 </tr>
 <tr>
-<td>OceanLink</td>
+<td><a href="http://cmdb.nccs.nasa.gov:8080/odisees/">ODISEES</a> ontology</td>
 <td>[70]</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="http://cmdb.nccs.nasa.gov:8080/odisees/">ODISEES</a></td>
-<td>[71]</td>
-<td>Classifies measured phenomena via its variables as attributes--as described in ASDC data</td>
+<td>Classifies measured phenomena of primarily atmospheric data via their attributed variables--as described in ASDC data</td>
 <td>RDF</td>
 <td>-</td>
 </tr>
 <tr>
-<td><a href="http://www.geolink.org/">GeoLink</a></td>
-<td>[72]</td>
 <td><a href="http://schema.geolink.org/1.0/base/main.html">Geolink Base ontology</a></td>
+<td>[71]</td>
+<td>GeoLink is a set of content patterns (ODPs) developed to model a data provider's discovery facet. These include cruise, person, organization, dataset, funding award, program, etc. (was previously OceanLink [72])</td>
 <td>RDF</td>
-<td></td>
+<td>-</td>
 </tr>
 </tbody>
-</table>
-<hr />
-<p>A <strong><em>big</em></strong> thanks to <a href="https://github.com/roomthily">roomthily</a> for suggesting I have a look at <a href="https://github.com/sindresorhus/awesome"><img alt="Awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" /></a>  lists.</p>
-<p><br />
-<em>"That rug really tied the room together."</em><br />
--<a href="http://www.imdb.com/character/ch0003518/?ref_=tt_cl_t1">The Dude</a></p></div>
+</table></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             
-            <center>Built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
 
         <script src="../js/jquery-1.10.2.min.js"></script>
