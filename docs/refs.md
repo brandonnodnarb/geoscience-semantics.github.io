@@ -64,7 +64,7 @@ numbered references collated from the web pages on this site.
 
 #### 51-75
 | id  | citation                                                         |
-| --- | -----------------------------------------------------------------|
+| ------ | -----------------------------------------------------------------|
 | [51] | Abel M, Lorenzatti A, De Ros LF, Silva OP, Bernardes AK, Goldberg K, et al. Lithologic Logs in the Tablet through Ontology-Based Facies Description, Long Beach, CA: AAPG Search and Discovery; 2012, p. AAPG Search and Discovery Article #90142.
 | [52] | Duerr RE, McCusker J, Parsons MA, Khalsa SJS, Pulsifer PL, Thompson C, et al. Formalizing the semantics of sea ice. Earth Sci Inform 2014:1–12. doi:10.1007/s12145-014-0177-z.
 | [53] | Pouchard L, Cinquini L, Drach B, Middleton D, Bernholdt D, Chanchio K, et al. An Ontology for Scientific Information in a Grid Environment: the Earth System Grid. Proceedings of the 3rd IEEE/ACM International Symposium on Cluster Computing and the Grid (CCGrid 2003), IEEE/ACM; 2003, p. 626–32.
