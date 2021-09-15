@@ -1,5 +1,5 @@
 site_name: geoscience semantics
-theme: gitbook  #windmill readthedocs cinder mkdocs bootstrap bootswatch bootstrap4 gitbook
+theme: gitbook #windmill readthedocs cinder mkdocs bootstrap bootswatch bootstrap4 gitbook material bootstrap386
 repo_url: https://github.com/brandonnodnarb/geoscience-semantics.github.io
 repo_name:
 site_description: geoscience semantic models
